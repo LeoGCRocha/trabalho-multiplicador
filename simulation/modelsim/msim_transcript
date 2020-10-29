@@ -1,0 +1,55 @@
+# do multiplier_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/aula8/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# 
+vsim -do multiplier_run_msim_rtl_vhdl.do -l msim_transcript -i work.bc
+# vsim -do multiplier_run_msim_rtl_vhdl.do -l msim_transcript -i work.bc 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bc(estrutura)
+# do multiplier_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/aula8/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# 
+add wave -position insertpoint  \
+sim:/bc/Az \
+sim:/bc/Bz \
+sim:/bc/CA \
+sim:/bc/CP \
+sim:/bc/Reset \
+sim:/bc/clk \
+sim:/bc/dec \
+sim:/bc/ini \
+sim:/bc/inicio \
+sim:/bc/pronto \
+sim:/bc/state
+do ./estimulosbc.do
+run 300ns
