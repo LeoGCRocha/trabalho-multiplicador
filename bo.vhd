@@ -3,11 +3,12 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
 
 ENTITY bo IS
+generic (n:natural := 8);
 PORT (clk : IN STD_LOGIC;
       ini, CP, CA, dec : IN STD_LOGIC;
-      entA, entB : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      entA, entB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
       Az, Bz : OUT STD_LOGIC;
-      saida, conteudoA, conteudoB : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+      saida, conteudoA, conteudoB : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 END bo;
 
 -- Sinais de comando
@@ -19,35 +20,40 @@ END bo;
 ARCHITECTURE estrutura OF bo IS
 	
 	COMPONENT registrador_r IS
+    generic (n:natural := n);
 	PORT (clk,  reset, carga : IN STD_LOGIC;
-		  d : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		  q : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+		  d : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+		  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 	END COMPONENT;
 	
 	COMPONENT registrador IS
+    generic (n:natural := n);
 	PORT (clk, carga : IN STD_LOGIC;
-		  d : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		  q : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+		  d : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+		  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 	END COMPONENT;
 	
 	COMPONENT mux2para1 IS
-	PORT ( a, b : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    generic (n:natural := n);
+	PORT ( a, b : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
            sel: IN STD_LOGIC;
-           y : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+           y : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 	END COMPONENT;
 	
 	COMPONENT somadorsubtrator IS
-	PORT (a, b : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    generic (n:natural := n);
+	PORT (a, b : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 		  op: IN STD_LOGIC;
-		  s : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+		  s : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 	END COMPONENT;
 	
     COMPONENT igualazero IS
-	PORT (a : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    generic (n:natural := n);
+	PORT (a : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
           igual : OUT STD_LOGIC);
 	END COMPONENT;
 		
-	SIGNAL saimux1, saimux2, saimux3, sairegP, sairegA, sairegB, saisomasub: STD_LOGIC_VECTOR (3 DOWNTO 0);
+	SIGNAL saimux1, saimux2, saimux3, sairegP, sairegA, sairegB, saisomasub: STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 
 BEGIN
 	mux1: mux2para1 PORT MAP (saisomasub, entA, ini, saimux1);
@@ -55,7 +61,7 @@ BEGIN
 	regA: registrador PORT MAP (clk, CA, saimux1, sairegA);
 	regB: registrador PORT MAP (clk, ini, entB, sairegB);
 	mux2: mux2para1 PORT MAP (sairegP, sairegA, dec, saimux2);	
-	mux3: mux2para1 PORT MAP (entB, "0001", dec, saimux3);
+	mux3: mux2para1 PORT MAP (entB, (0 => '1', others => '0'), dec, saimux3);
 	somasub: somadorsubtrator PORT MAP (saimux2, saimux3, dec, saisomasub);
 	geraAz: igualazero PORT MAP (sairegA, Az);
 	geraBz: igualazero PORT MAP (sairegB, Bz);	

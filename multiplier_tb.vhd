@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity multiplier_tb is
-    generic (n:natural := 4);
+    generic (n:natural := 8);
 end multiplier_tb;
 
 architecture tb of multiplier_tb is
@@ -11,6 +11,7 @@ architecture tb of multiplier_tb is
     signal atb, btb, saidatb : std_logic_vector(n-1 downto 0);
 
     component multiplier is
+    generic (n:natural := n);
     port(a, b   : in std_logic_vector(n-1 downto 0);
         inicio, reset, clk :in std_logic;
         pronto : out std_logic;
@@ -25,7 +26,7 @@ begin
 
     stimulus : process
     begin
-        atb <= "0101"; btb <= "0011"; iniciotb <= '0';
+        atb <= (0 => '1',2 => '1', others => '0'); btb <= (0 => '1', 1 => '1', others => '0'); iniciotb <= '0';
         wait for clkp; iniciotb <= '1';
         wait for clkp; iniciotb <= '0';
         wait for 50*clkp;

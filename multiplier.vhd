@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
  
 entity multiplier is
-    generic (n:natural := 4);
+    generic (n:natural := 8);
     port(a, b   : in std_logic_vector(n-1 downto 0);
 			inicio, reset, clk :in std_logic;
 			pronto : out std_logic;
@@ -14,11 +14,12 @@ END multiplier;
 ARCHITECTURE estrutura OF multiplier IS
 
 COMPONENT bo is
+    generic (n:natural := n);
 	PORT (clk : IN STD_LOGIC;
 			ini, CP, CA, dec : IN STD_LOGIC;
-			entA, entB : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			entA, entB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 			Az, Bz : OUT STD_LOGIC;
-			saida, conteudoA, conteudoB : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+			saida, conteudoA, conteudoB : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 END COMPONENT;
 
 COMPONENT bc IS
