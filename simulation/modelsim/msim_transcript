@@ -9,6 +9,10 @@
 # ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package multiplier_pkg
 # vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/bc.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -59,14 +63,6 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity somadorsubtrator
 # -- Compiling architecture estrutura of somadorsubtrator
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multiplier
-# -- Compiling architecture estrutura of multiplier
 # vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -77,6 +73,15 @@
 # -- Compiling entity bo
 # -- Compiling architecture estrutura of bo
 # ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd(76): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier_pkg
+# -- Compiling entity multiplier
+# -- Compiling architecture estrutura of multiplier
 # 
 vcom -reportprogress 300 -work work /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -84,28 +89,19 @@ vcom -reportprogress 300 -work work /home/kuru/UFSC/SD/QuartusProjects/TP/multip
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
+# -- Loading package multiplier_pkg
 # -- Compiling entity multiplier_tb
 # -- Compiling architecture tb of multiplier_tb
 # -- Loading entity multiplier
-# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd(29): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd(29): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-vcom -reportprogress 300 -work work /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multiplier_tb
-# -- Compiling architecture tb of multiplier_tb
-# -- Loading entity multiplier
-# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd(29): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd(29): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd(30): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd(30): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 vsim work.multiplier_tb
 # vsim work.multiplier_tb 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
+# Loading work.multiplier_pkg
 # Loading work.multiplier_tb(tb)
 # Loading work.multiplier(estrutura)
 # Loading ieee.std_logic_arith(body)

@@ -1,9 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.multiplier_pkg.all;
  
 entity multiplier is
-    generic (n:natural := 4);
+    generic (n:natural := n_BITS);
     port(a, b   : in std_logic_vector(n-1 downto 0);
 			inicio, reset, clk :in std_logic;
 			pronto : out std_logic;

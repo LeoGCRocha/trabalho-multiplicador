@@ -1,9 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.multiplier_pkg.all;
 
 entity multiplier_tb is
-    generic (n:natural := 4);
+    generic (n:natural := n_BITS);
 end multiplier_tb;
 
 architecture tb of multiplier_tb is
