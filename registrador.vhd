@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
 
 ENTITY registrador IS
-generic (n:natural := 8);
+generic (n:natural);
 PORT (clk, carga : IN STD_LOGIC;
 	  d : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 	  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
