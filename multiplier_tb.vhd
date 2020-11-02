@@ -25,7 +25,7 @@ begin
 
     stimulus : process
     begin
-        atb <= "0010"; btb <= "0010"; iniciotb <= '0';
+        atb <= "0101"; btb <= "0011"; iniciotb <= '0';
         wait for clkp; iniciotb <= '1';
         wait for clkp; iniciotb <= '0';
         wait for 50*clkp;

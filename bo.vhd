@@ -52,10 +52,10 @@ ARCHITECTURE estrutura OF bo IS
 BEGIN
 	mux1: mux2para1 PORT MAP (saisomasub, entA, ini, saimux1);
 	regP: registrador_r PORT MAP (clk, ini, CP, saisomasub, sairegP);
-	regA: registrador PORT MAP (clk, CP, entA, sairegA);
-	regB: registrador PORT MAP (clk, CP, entB, sairegB);
+	regA: registrador PORT MAP (clk, CA, saimux1, sairegA);
+	regB: registrador PORT MAP (clk, ini, entB, sairegB);
 	mux2: mux2para1 PORT MAP (sairegP, sairegA, dec, saimux2);	
-	mux3: mux2para1 PORT MAP (entB, "1111", dec, saimux3);
+	mux3: mux2para1 PORT MAP (entB, "0001", dec, saimux3);
 	somasub: somadorsubtrator PORT MAP (saimux2, saimux3, dec, saisomasub);
 	geraAz: igualazero PORT MAP (sairegA, Az);
 	geraBz: igualazero PORT MAP (sairegB, Bz);	

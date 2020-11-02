@@ -15,7 +15,7 @@ L4
 VR@@E5gSJVn[i0>H[=JWll0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1604101666.083651
+Z8 !s108 1604345232.552973
 Z9 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/bc.vhd|
 Z10 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/bc.vhd|
 Z11 o-93 -work work -O0
@@ -39,68 +39,68 @@ R12
 !s100 ;cU:XlCAM4lQfaH<[h]l73
 !i10b 1
 Ebo
-R1
-Z13 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z14 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z13 w1604345145
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 R2
 R3
 R4
-Z15 8/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd
-Z16 F/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd
+Z16 8/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd
+Z17 F/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd
 l0
 L5
 VBK?C7ndY<`QbdIk>f6kSj2
 R7
 31
-Z17 !s108 1604101666.240265
-Z18 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd|
-Z19 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd|
+Z18 !s108 1604345232.688479
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd|
+Z20 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd|
 R11
 R12
 !s100 QfbSmG=U96YK]=BW4=XFm2
 !i10b 1
 Aestrutura
-R13
 R14
+R15
 R2
 R3
 DEx4 work 2 bo 0 22 BK?C7ndY<`QbdIk>f6kSj2
 l52
 L19
-Va=D>Zff_lS@5KogWRENPZ2
+VGaYZdGFzWFZ]afW;ZOcZ81
 R7
 31
-R17
 R18
 R19
+R20
 R11
 R12
-!s100 mIPJUVj6dIf4OFaHYX`Q72
+!s100 ;C=?cmaoD:z3@MYIQBT>43
 !i10b 1
 Eigualazero
 R1
-R13
 R14
+R15
 R2
 R3
 R4
-Z20 8/home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd
-Z21 F/home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd
+Z21 8/home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd
+Z22 F/home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd
 l0
 L5
 VNBoGfmMBo_D5A^UMKX@?k0
 R7
 31
-Z22 !s108 1604101666.181090
-Z23 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd|
-Z24 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd|
+Z23 !s108 1604345232.628372
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd|
+Z25 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd|
 R11
 R12
 !s100 KfNoVkif4VbL3XJkO8lZ?2
 !i10b 1
 Aestrutura
-R13
 R14
+R15
 R2
 R3
 DEx4 work 10 igualazero 0 22 NBoGfmMBo_D5A^UMKX@?k0
@@ -109,58 +109,58 @@ L10
 V9eL@Fld@EXP<oT>QmjFT;1
 R7
 31
-R22
 R23
 R24
+R25
 R11
 R12
 !s100 fJS=6mMjLanN_0M:1bWB]1
 !i10b 1
 Emultiplier
 R1
-Z25 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z26 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-Z26 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd
-Z27 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd
+Z27 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd
+Z28 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd
 l0
 L5
 V]_15VU?7KE2TB4@0b988o2
 R7
 31
-Z28 !s108 1604101666.218564
-Z29 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd|
-Z30 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd|
+Z29 !s108 1604345232.668212
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd|
+Z31 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd|
 R11
 R12
 !s100 X5RM=4RfCRieYQc2hUR3a3
 !i10b 1
 Aestrutura
-R25
+R26
 R2
 R3
-Z31 DEx4 work 10 multiplier 0 22 ]_15VU?7KE2TB4@0b988o2
+Z32 DEx4 work 10 multiplier 0 22 ]_15VU?7KE2TB4@0b988o2
 l33
 L14
 VJ`7?aj9B8cCW]To4CP_0`2
 R7
 31
-R28
 R29
 R30
+R31
 R11
 R12
 !s100 5WYJ4IZ?;_e=B7NN@CN:h1
 !i10b 1
 Emultiplier_tb
-Z32 w1604101619
-R25
+Z33 w1604345729
+R26
 R2
 R3
 R4
-Z33 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd
-Z34 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd
+Z34 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd
+Z35 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd
 l0
 L5
 VUVaTGlX9ReDe4^ZbihN>>3
@@ -168,44 +168,44 @@ VUVaTGlX9ReDe4^ZbihN>>3
 R7
 32
 !i10b 1
-Z35 !s108 1604101688.679061
-Z36 !s90 -reportprogress|300|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd|
-Z37 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd|
-Z38 o-work work -O0
+Z36 !s108 1604345737.878467
+Z37 !s90 -reportprogress|300|-work|work|-O0|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd|
+Z38 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_tb.vhd|
+Z39 o-work work -O0
 R12
 Atb
-R31
-R25
+R32
+R26
 R2
 R3
-Z39 DEx4 work 13 multiplier_tb 0 22 UVaTGlX9ReDe4^ZbihN>>3
+Z40 DEx4 work 13 multiplier_tb 0 22 UVaTGlX9ReDe4^ZbihN>>3
 l21
 L9
-Z40 V:R=mUo8hT5]7AU708F_FN1
-Z41 !s100 F<4d9H1>W@3zGXiXC^2VI3
+Vc3f3A>WUZT=oOi[?EA40C0
+!s100 CW4O5:<aLo=3m^O?86YO71
 R7
 32
 !i10b 1
-R35
 R36
 R37
 R38
+R39
 R12
 Emux2para1
 R1
 R2
 R3
 R4
-Z42 8/home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd
-Z43 F/home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd
+Z41 8/home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd
+Z42 F/home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd
 l0
 L4
 VT>Uoej=7LaLB[cj@P@6jl2
 R7
 31
-Z44 !s108 1604101666.164435
-Z45 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd|
-Z46 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd|
+Z43 !s108 1604345232.611127
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd|
+Z45 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd|
 R11
 R12
 !s100 GJF2MJoU23L<AXWiL_zkM2
@@ -219,37 +219,37 @@ L10
 VhhOVOlgEYHo;GLlaBzZ[h2
 R7
 31
+R43
 R44
 R45
-R46
 R11
 R12
 !s100 LmbI1PM`XDj0PSkgQXAS00
 !i10b 1
 Eregistrador
 R1
-R13
 R14
+R15
 R2
 R3
 R4
-Z47 8/home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd
-Z48 F/home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd
+Z46 8/home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd
+Z47 F/home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd
 l0
 L5
 V>>M4OeS=CL]iVhHKQW42M0
 R7
 31
-Z49 !s108 1604101666.145142
-Z50 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd|
-Z51 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd|
+Z48 !s108 1604345232.590736
+Z49 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd|
+Z50 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd|
 R11
 R12
 !s100 z<8o?ck1;D5cikWSSR=@G3
 !i10b 1
 Aestrutura
-R13
 R14
+R15
 R2
 R3
 DEx4 work 11 registrador 0 22 >>M4OeS=CL]iVhHKQW42M0
@@ -258,37 +258,37 @@ L11
 VaMX4FdYM^XZ:Hm2bX_G4e1
 R7
 31
+R48
 R49
 R50
-R51
 R11
 R12
 !s100 4EbXgbcj0odiGSm_XOSdg3
 !i10b 1
 Eregistrador_r
 R1
-R13
 R14
+R15
 R2
 R3
 R4
-Z52 8/home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd
-Z53 F/home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd
+Z51 8/home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd
+Z52 F/home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd
 l0
 L5
 VUh1<NMK:Il2fR@1EC^WL_0
 R7
 31
-Z54 !s108 1604101666.125517
-Z55 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd|
-Z56 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd|
+Z53 !s108 1604345232.570628
+Z54 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd|
+Z55 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd|
 R11
 R12
 !s100 fJW5`4`mR^X>P7?9;6d6d2
 !i10b 1
 Aestrutura
-R13
 R14
+R15
 R2
 R3
 DEx4 work 13 registrador_r 0 22 Uh1<NMK:Il2fR@1EC^WL_0
@@ -297,37 +297,37 @@ L11
 VnaIcR@U3?^0<?XA8M9P_F3
 R7
 31
+R53
 R54
 R55
-R56
 R11
 R12
 !s100 ioAP>2EiST7lL9KfE7Cj`2
 !i10b 1
 Esomadorsubtrator
 R1
-R13
 R14
+R15
 R2
 R3
 R4
-Z57 8/home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd
-Z58 F/home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd
+Z56 8/home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd
+Z57 F/home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd
 l0
 L5
 V2M9SZDEodkeeV;n:VBAGl0
 R7
 31
-Z59 !s108 1604101666.199444
-Z60 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd|
-Z61 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd|
+Z58 !s108 1604345232.648189
+Z59 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd|
+Z60 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd|
 R11
 R12
 !s100 aMggnlDmViEO:3OD9EdIF3
 !i10b 1
 Aestrutura
-R13
 R14
+R15
 R2
 R3
 DEx4 work 16 somadorsubtrator 0 22 2M9SZDEodkeeV;n:VBAGl0
@@ -336,9 +336,9 @@ L11
 V833R`WUi_l1dlb_aCC89P1
 R7
 31
+R58
 R59
 R60
-R61
 R11
 R12
 !s100 WA=KjK590Ez=;GjiS<;Vo0
