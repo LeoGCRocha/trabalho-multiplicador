@@ -1,0 +1,24 @@
+|PL
+clk => var[0].CLK
+clk => var[1].CLK
+clk => var[2].CLK
+clk => var[3].CLK
+cPL => var[0].OUTPUTSELECT
+cPL => var[1].OUTPUTSELECT
+cPL => var[2].OUTPUTSELECT
+cPL => var[3].OUTPUTSELECT
+srPL => var[0].OUTPUTSELECT
+srPL => var[1].OUTPUTSELECT
+srPL => var[2].OUTPUTSELECT
+srPL => var[3].OUTPUTSELECT
+d[0] => var[0].DATAB
+d[1] => var[1].DATAB
+d[2] => var[2].DATAB
+d[3] => var[3].DATAB
+q[0] <= var[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= var[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= var[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= var[3].DB_MAX_OUTPUT_PORT_TYPE
+srIn => var[3].DATAB
+
+

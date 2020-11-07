@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.multiplier_pkg.all;
+use ieee.numeric_std.all;
  
 entity multiplier is
     generic (n:natural := n_BITS);

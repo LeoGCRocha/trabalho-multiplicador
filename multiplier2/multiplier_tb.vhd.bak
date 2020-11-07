@@ -21,7 +21,7 @@ architecture tb of multiplier_tb is
 
     constant clkp : time := 25 ns;
 begin
-    UUT : entity work.multiplier2 port map (atb, btb, iniciotb, resettb, clktb, prontotb, saidatb);
+    UUT : entity work.multiplier port map (atb, btb, iniciotb, resettb, clktb, prontotb, saidatb);
 
     resettb <= '1', '0' after 10 ns;
 

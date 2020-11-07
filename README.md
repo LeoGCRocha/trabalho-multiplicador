@@ -20,7 +20,7 @@ Multiplicador 2 (com shift):
 ✓   FSMD
 ✓   Diagramas de BO
     Componentes separados (usar numeric ao invés de std_logic_vector)
-        Falta registrador com shift
+✓       Falta registrador com shift
     BO
     BC
     Top level
