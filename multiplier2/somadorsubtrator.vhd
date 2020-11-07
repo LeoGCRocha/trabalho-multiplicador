@@ -1,0 +1,17 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY somadorsubtrator IS
+generic (n:natural);
+PORT (a, b : IN unsigned(n-1 DOWNTO 0);
+      op: IN STD_LOGIC;
+      s : OUT unsigned(n-1 DOWNTO 0));
+END somadorsubtrator;
+
+ARCHITECTURE estrutura OF somadorsubtrator IS
+BEGIN
+	WITH op SELECT
+         s <= a + b WHEN '0',
+              a - b WHEN OTHERS;
+END estrutura;
