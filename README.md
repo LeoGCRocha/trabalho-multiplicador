@@ -1,6 +1,8 @@
 # trabalho-multiplicador
 Trabalho Sistemas Digitais
 
+FPGA: EP2C35F672C6
+
 Slides de apresentação
 
 Multiplicador 1 (somas consecutivas):

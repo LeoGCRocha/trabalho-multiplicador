@@ -4,7 +4,7 @@ USE ieee.std_logic_unsigned.all;
 
 ENTITY igualazero IS
 generic (n:natural);
-PORT (a : IN unsigned(n-1 DOWNTO 0);
+PORT (a : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 igual : OUT STD_LOGIC);
 END igualazero;
 

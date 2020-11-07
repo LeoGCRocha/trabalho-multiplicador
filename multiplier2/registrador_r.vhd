@@ -5,8 +5,8 @@ USE ieee.std_logic_unsigned.all;
 ENTITY registrador_r IS
 generic (n:natural);
 PORT (clk, reset, carga : IN STD_LOGIC;
-	  d : IN unsigned(n-1 DOWNTO 0);
-	  q : OUT unsigned(n-1 DOWNTO 0));
+	  d : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+	  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 END registrador_r;
 
 ARCHITECTURE estrutura OF registrador_r IS

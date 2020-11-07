@@ -4,9 +4,9 @@ USE ieee.std_logic_unsigned.all;
 
 ENTITY somadorsubtrator IS
 generic (n:natural);
-PORT (a, b : IN unsigned(n-1 DOWNTO 0);
+PORT (a, b : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
       op: IN STD_LOGIC;
-      s : OUT unsigned(n-1 DOWNTO 0));
+      s : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 END somadorsubtrator;
 
 ARCHITECTURE estrutura OF somadorsubtrator IS
