@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplier
-Fri Nov  6 10:14:13 2020
+Sat Nov  7 17:57:55 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -56,16 +56,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov  6 10:14:13 2020           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov  7 17:57:55 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; multiplier                                      ;
 ; Top-level Entity Name              ; multiplier                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 108                                             ;
-;     Total combinational functions  ; 91                                              ;
-;     Dedicated logic registers      ; 54                                              ;
-; Total registers                    ; 54                                              ;
-; Total pins                         ; 52                                              ;
+; Total logic elements               ; 62                                              ;
+;     Total combinational functions  ; 53                                              ;
+;     Dedicated logic registers      ; 30                                              ;
+; Total registers                    ; 30                                              ;
+; Total pins                         ; 28                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -169,21 +169,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; multiplier_pkg.vhd               ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier_pkg.vhd   ;         ;
-; bc.vhd                           ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/bc.vhd               ;         ;
-; registrador_r.vhd                ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/registrador_r.vhd    ;         ;
-; registrador.vhd                  ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/registrador.vhd      ;         ;
-; mux2para1.vhd                    ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/mux2para1.vhd        ;         ;
-; igualazero.vhd                   ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/igualazero.vhd       ;         ;
-; somadorsubtrator.vhd             ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/somadorsubtrator.vhd ;         ;
-; multiplier.vhd                   ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier.vhd       ;         ;
-; bo.vhd                           ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/bo.vhd               ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; multiplier_pkg.vhd               ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd   ;         ;
+; bc.vhd                           ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd               ;         ;
+; registrador_r.vhd                ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd    ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd      ;         ;
+; mux2para1.vhd                    ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd        ;         ;
+; igualazero.vhd                   ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd       ;         ;
+; somadorsubtrator.vhd             ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd ;         ;
+; multiplier.vhd                   ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd       ;         ;
+; bo.vhd                           ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd               ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -191,27 +191,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 108   ;
+; Estimated Total logic elements              ; 62    ;
 ;                                             ;       ;
-; Total combinational functions               ; 91    ;
+; Total combinational functions               ; 53    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
-;     -- 3 input functions                    ; 56    ;
-;     -- <=2 input functions                  ; 25    ;
+;     -- 4 input functions                    ; 5     ;
+;     -- 3 input functions                    ; 32    ;
+;     -- <=2 input functions                  ; 16    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 75    ;
-;     -- arithmetic mode                      ; 16    ;
+;     -- normal mode                          ; 45    ;
+;     -- arithmetic mode                      ; 8     ;
 ;                                             ;       ;
-; Total registers                             ; 54    ;
-;     -- Dedicated logic registers            ; 54    ;
+; Total registers                             ; 30    ;
+;     -- Dedicated logic registers            ; 30    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 52    ;
+; I/O pins                                    ; 28    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 54    ;
-; Total fan-out                               ; 453   ;
+; Maximum fan-out                             ; 30    ;
+; Total fan-out                               ; 255   ;
 ; Average fan-out                             ; 2.30  ;
 +---------------------------------------------+-------+
 
@@ -221,17 +221,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
-; |multiplier                      ; 91 (0)            ; 54 (0)       ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |multiplier                                      ; work         ;
+; |multiplier                      ; 53 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |multiplier                                      ; work         ;
 ;    |bc:bloco_controle|           ; 16 (16)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bc:bloco_controle                    ; work         ;
-;    |bo:four_bit|                 ; 75 (0)            ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit                          ; work         ;
-;       |igualazero:geraAz|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraAz        ; work         ;
-;       |igualazero:geraBz|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraBz        ; work         ;
-;       |mux2para1:mux1|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux1           ; work         ;
-;       |mux2para1:mux2|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux2           ; work         ;
-;       |registrador:regA|         ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regA         ; work         ;
-;       |registrador:regB|         ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regB         ; work         ;
-;       |registrador_r:regP|       ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador_r:regP       ; work         ;
-;       |somadorsubtrator:somasub| ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|somadorsubtrator:somasub ; work         ;
+;    |bo:four_bit|                 ; 37 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit                          ; work         ;
+;       |igualazero:geraAz|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraAz        ; work         ;
+;       |igualazero:geraBz|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraBz        ; work         ;
+;       |mux2para1:mux1|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux1           ; work         ;
+;       |mux2para1:mux2|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux2           ; work         ;
+;       |registrador:regA|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regA         ; work         ;
+;       |registrador:regB|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regB         ; work         ;
+;       |registrador_r:regP|       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador_r:regP       ; work         ;
+;       |somadorsubtrator:somasub| ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|somadorsubtrator:somasub ; work         ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -271,12 +271,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 54    ;
+; Total registers                              ; 30    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 22    ;
+; Number of registers using Asynchronous Clear ; 14    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 48    ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -286,7 +286,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+-------+---------------------------------------------------+
 ; Parameter Name ; Value ; Type                                              ;
 +----------------+-------+---------------------------------------------------+
-; n              ; 16    ; Signed Integer                                    ;
+; n              ; 8     ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -296,7 +296,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; n              ; 16    ; Signed Integer                  ;
+; n              ; 8     ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -306,7 +306,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; n              ; 16    ; Signed Integer                                 ;
+; n              ; 8     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -316,7 +316,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
-; n              ; 16    ; Signed Integer                                     ;
+; n              ; 8     ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -326,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
-; n              ; 16    ; Signed Integer                                   ;
+; n              ; 8     ; Signed Integer                                   ;
 +----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -336,7 +336,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
-; n              ; 16    ; Signed Integer                                   ;
+; n              ; 8     ; Signed Integer                                   ;
 +----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -346,7 +346,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; n              ; 16    ; Signed Integer                                 ;
+; n              ; 8     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -356,7 +356,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; n              ; 16    ; Signed Integer                                 ;
+; n              ; 8     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -366,7 +366,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                     ;
 +----------------+-------+----------------------------------------------------------+
-; n              ; 16    ; Signed Integer                                           ;
+; n              ; 8     ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -376,7 +376,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------+
 ; Parameter Name ; Value ; Type                                              ;
 +----------------+-------+---------------------------------------------------+
-; n              ; 16    ; Signed Integer                                    ;
+; n              ; 8     ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -386,19 +386,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------+
 ; Parameter Name ; Value ; Type                                              ;
 +----------------+-------+---------------------------------------------------+
-; n              ; 16    ; Signed Integer                                    ;
+; n              ; 8     ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------+
 ; Port Connectivity Checks: "bo:four_bit|mux2para1:mux3" ;
-+----------+-------+----------+--------------------------+
-; Port     ; Type  ; Severity ; Details                  ;
-+----------+-------+----------+--------------------------+
-; b[15..1] ; Input ; Info     ; Stuck at GND             ;
-; b[0]     ; Input ; Info     ; Stuck at VCC             ;
-+----------+-------+----------+--------------------------+
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; b[7..1] ; Input ; Info     ; Stuck at GND              ;
+; b[0]    ; Input ; Info     ; Stuck at VCC              ;
++---------+-------+----------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -426,7 +426,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov  6 10:14:12 2020
+    Info: Processing started: Sat Nov  7 17:57:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplier -c multiplier
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 0 entities, in source file multiplier_pkg.vhd
@@ -482,14 +482,14 @@ Warning (13012): Latch bc:bloco_controle|pronto has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal bc:bloco_controle|state.S5
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 177 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 35 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 125 logic cells
+Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 71 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 621 megabytes
-    Info: Processing ended: Fri Nov  6 10:14:13 2020
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Nov  7 17:57:55 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

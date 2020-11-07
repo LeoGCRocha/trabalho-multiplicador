@@ -12,7 +12,8 @@ Multiplicador 1 (somas consecutivas):
 ✓   Top level
 ✓   Testbench
 ✓   Generic
-    Persistência
+✓   Persistência
+    Python_test
 
 Multiplicador 2 (com shift):
 ✓   FSMD
@@ -25,6 +26,7 @@ Multiplicador 2 (com shift):
     Testbench
     Generic
     Persistência
+    Python_test
 
 Multiplicador 3 (a definir):
     FSMD
@@ -36,3 +38,4 @@ Multiplicador 3 (a definir):
     Testbench
     Generic
     Persistência
+    Python_test
