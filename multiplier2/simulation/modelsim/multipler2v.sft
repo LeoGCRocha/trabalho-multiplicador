@@ -1,5 +1,6 @@
 set tool_name "ModelSim-Altera (VHDL)"
 set corner_file_list {
-	{{"Slow Model"} {multipler2v.vho multipler2v_vhd.sdo}}
-	{{"Fast Model"} {multipler2v_fast.vho multipler2v_vhd_fast.sdo}}
+    {{"Slow -6 1.2V 85 Model"} {multipler2v_6_1200mv_85c_slow.vho multipler2v_6_1200mv_85c_vhd_slow.sdo}}
+    {{"Slow -6 1.2V 0 Model"} {multipler2v_6_1200mv_0c_slow.vho multipler2v_6_1200mv_0c_vhd_slow.sdo}}
+    {{"Fast -M 1.2V 0 Model"} {multipler2v_min_1200mv_0c_fast.vho multipler2v_min_1200mv_0c_vhd_fast.sdo}}
 }

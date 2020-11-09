@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Nov 08 17:01:59 2020
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Mon Nov 09 00:48:40 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : multipler2v
 Top-level Entity Name : multipler2v
-Family : Cyclone II
+Family : Cyclone IV E
 Total logic elements : 0
     Total combinational functions : 0
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 36
+Total pins : 75
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

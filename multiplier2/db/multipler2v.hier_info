@@ -1,51 +1,91 @@
 |multipler2v
-iniciar => ~NO_FANOUT~
-reset => ~NO_FANOUT~
-clk => bo:boSignal.clk
-entA[0] => bo:boSignal.entA[0]
-entA[1] => bo:boSignal.entA[1]
-entA[2] => bo:boSignal.entA[2]
-entA[3] => bo:boSignal.entA[3]
-entA[4] => bo:boSignal.entA[4]
-entA[5] => bo:boSignal.entA[5]
-entA[6] => bo:boSignal.entA[6]
-entA[7] => bo:boSignal.entA[7]
-entB[0] => bo:boSignal.entB[0]
-entB[1] => bo:boSignal.entB[1]
-entB[2] => bo:boSignal.entB[2]
-entB[3] => bo:boSignal.entB[3]
-entB[4] => bo:boSignal.entB[4]
-entB[5] => bo:boSignal.entB[5]
-entB[6] => bo:boSignal.entB[6]
-entB[7] => bo:boSignal.entB[7]
-pronto <= comb.DB_MAX_OUTPUT_PORT_TYPE
-mult[0] <= bo:boSignal.mult[0]
-mult[1] <= bo:boSignal.mult[1]
-mult[2] <= bo:boSignal.mult[2]
-mult[3] <= bo:boSignal.mult[3]
-mult[4] <= bo:boSignal.mult[4]
-mult[5] <= bo:boSignal.mult[5]
-mult[6] <= bo:boSignal.mult[6]
-mult[7] <= bo:boSignal.mult[7]
-mult[8] <= bo:boSignal.mult[8]
-mult[9] <= bo:boSignal.mult[9]
-mult[10] <= bo:boSignal.mult[10]
-mult[11] <= bo:boSignal.mult[11]
-mult[12] <= bo:boSignal.mult[12]
-mult[13] <= bo:boSignal.mult[13]
-mult[14] <= bo:boSignal.mult[14]
-mult[15] <= bo:boSignal.mult[15]
+entA[0] => bo:blocoOperativo.entA[0]
+entA[1] => bo:blocoOperativo.entA[1]
+entA[2] => bo:blocoOperativo.entA[2]
+entA[3] => bo:blocoOperativo.entA[3]
+entA[4] => bo:blocoOperativo.entA[4]
+entA[5] => bo:blocoOperativo.entA[5]
+entA[6] => bo:blocoOperativo.entA[6]
+entA[7] => bo:blocoOperativo.entA[7]
+entB[0] => bo:blocoOperativo.entB[0]
+entB[1] => bo:blocoOperativo.entB[1]
+entB[2] => bo:blocoOperativo.entB[2]
+entB[3] => bo:blocoOperativo.entB[3]
+entB[4] => bo:blocoOperativo.entB[4]
+entB[5] => bo:blocoOperativo.entB[5]
+entB[6] => bo:blocoOperativo.entB[6]
+entB[7] => bo:blocoOperativo.entB[7]
+A[0] => bo:blocoOperativo.A[0]
+A[1] => bo:blocoOperativo.A[1]
+A[2] => bo:blocoOperativo.A[2]
+A[3] => bo:blocoOperativo.A[3]
+A[4] => bo:blocoOperativo.A[4]
+A[5] => bo:blocoOperativo.A[5]
+A[6] => bo:blocoOperativo.A[6]
+A[7] => bo:blocoOperativo.A[7]
+B[0] => bo:blocoOperativo.B[0]
+B[1] => bo:blocoOperativo.B[1]
+B[2] => bo:blocoOperativo.B[2]
+B[3] => bo:blocoOperativo.B[3]
+B[4] => bo:blocoOperativo.B[4]
+B[5] => bo:blocoOperativo.B[5]
+B[6] => bo:blocoOperativo.B[6]
+B[7] => bo:blocoOperativo.B[7]
+P[0] => bo:blocoOperativo.P[0]
+P[1] => bo:blocoOperativo.P[1]
+P[2] => bo:blocoOperativo.P[2]
+P[3] => bo:blocoOperativo.P[3]
+P[4] => bo:blocoOperativo.P[4]
+P[5] => bo:blocoOperativo.P[5]
+P[6] => bo:blocoOperativo.P[6]
+P[7] => bo:blocoOperativo.P[7]
+PH[0] => bo:blocoOperativo.PH[0]
+PH[1] => bo:blocoOperativo.PH[1]
+PH[2] => bo:blocoOperativo.PH[2]
+PH[3] => bo:blocoOperativo.PH[3]
+PH[4] => bo:blocoOperativo.PH[4]
+PH[5] => bo:blocoOperativo.PH[5]
+PH[6] => bo:blocoOperativo.PH[6]
+PH[7] => bo:blocoOperativo.PH[7]
+cont[0] => bo:blocoOperativo.cont[0]
+cont[1] => bo:blocoOperativo.cont[1]
+cont[2] => bo:blocoOperativo.cont[2]
+cont[3] => bo:blocoOperativo.cont[3]
+cont[4] => bo:blocoOperativo.cont[4]
+cont[5] => bo:blocoOperativo.cont[5]
+cont[6] => bo:blocoOperativo.cont[6]
+cont[7] => bo:blocoOperativo.cont[7]
+clk => bo:blocoOperativo.clk
+clk => bc:blocoControle.clk
+reset => bc:blocoControle.reset
+iniciar => bc:blocoControle.iniciar
+mult[0] << bo:blocoOperativo.mult[0]
+mult[1] << bo:blocoOperativo.mult[1]
+mult[2] << bo:blocoOperativo.mult[2]
+mult[3] << bo:blocoOperativo.mult[3]
+mult[4] << bo:blocoOperativo.mult[4]
+mult[5] << bo:blocoOperativo.mult[5]
+mult[6] << bo:blocoOperativo.mult[6]
+mult[7] << bo:blocoOperativo.mult[7]
+mult[8] << bo:blocoOperativo.mult[8]
+mult[9] << bo:blocoOperativo.mult[9]
+mult[10] << bo:blocoOperativo.mult[10]
+mult[11] << bo:blocoOperativo.mult[11]
+mult[12] << bo:blocoOperativo.mult[12]
+mult[13] << bo:blocoOperativo.mult[13]
+mult[14] << bo:blocoOperativo.mult[14]
+mult[15] << bo:blocoOperativo.mult[15]
 
 
-|multipler2v|bo:boSignal
-entA[0] => regextra:regA.d[0]
-entA[1] => regextra:regA.d[1]
-entA[2] => regextra:regA.d[2]
-entA[3] => regextra:regA.d[3]
-entA[4] => regextra:regA.d[4]
-entA[5] => regextra:regA.d[5]
-entA[6] => regextra:regA.d[6]
-entA[7] => regextra:regA.d[7]
+|multipler2v|bo:blocoOperativo
+entA[0] => mux2para1:muxA.a[0]
+entA[1] => mux2para1:muxA.a[1]
+entA[2] => mux2para1:muxA.a[2]
+entA[3] => mux2para1:muxA.a[3]
+entA[4] => mux2para1:muxA.a[4]
+entA[5] => mux2para1:muxA.a[5]
+entA[6] => mux2para1:muxA.a[6]
+entA[7] => mux2para1:muxA.a[7]
 entB[0] => registrador:regB.d[0]
 entB[1] => registrador:regB.d[1]
 entB[2] => registrador:regB.d[2]
@@ -54,54 +94,103 @@ entB[4] => registrador:regB.d[4]
 entB[5] => registrador:regB.d[5]
 entB[6] => registrador:regB.d[6]
 entB[7] => registrador:regB.d[7]
-clk => flip_flop:flop.clk
-clk => regextra:regPH.clk
-clk => regextra:regPL.clk
-clk => regextra:regA.clk
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+A[4] => ~NO_FANOUT~
+A[5] => ~NO_FANOUT~
+A[6] => ~NO_FANOUT~
+A[7] => ~NO_FANOUT~
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+B[3] => ~NO_FANOUT~
+B[4] => ~NO_FANOUT~
+B[5] => ~NO_FANOUT~
+B[6] => ~NO_FANOUT~
+B[7] => ~NO_FANOUT~
+P[0] => ~NO_FANOUT~
+P[1] => ~NO_FANOUT~
+P[2] => ~NO_FANOUT~
+P[3] => ~NO_FANOUT~
+P[4] => ~NO_FANOUT~
+P[5] => ~NO_FANOUT~
+P[6] => ~NO_FANOUT~
+P[7] => ~NO_FANOUT~
+PH[0] => ~NO_FANOUT~
+PH[1] => ~NO_FANOUT~
+PH[2] => ~NO_FANOUT~
+PH[3] => ~NO_FANOUT~
+PH[4] => ~NO_FANOUT~
+PH[5] => ~NO_FANOUT~
+PH[6] => ~NO_FANOUT~
+PH[7] => ~NO_FANOUT~
+cont[0] => ~NO_FANOUT~
+cont[1] => ~NO_FANOUT~
+cont[2] => ~NO_FANOUT~
+cont[3] => ~NO_FANOUT~
+cont[4] => ~NO_FANOUT~
+cont[5] => ~NO_FANOUT~
+cont[6] => ~NO_FANOUT~
+cont[7] => ~NO_FANOUT~
+clk => registrador:regA.clk
 clk => registrador:regB.clk
+clk => registrador:regPH.clk
+clk => registrador:regP.clk
 clk => registrador:regCont.clk
-clk => registrador:regmult.clk
-CB => mux2para1:muxPH.sel
-CB => mux2para1:muxCont.sel
-CB => regextra:regPL.carga
-CB => regextra:regA.carga
-CB => registrador:regB.carga
-SRPH => regextra:regPH.sh
-SRPH => regextra:regPL.sh
-SRPH => regextra:regA.sh
-CPH => regextra:regPH.carga
-MFF => mux1:muxCout.sel
-CCONT => registrador:regCont.carga
-CMULT => registrador:regmult.carga
-Az <= igualazero:Azero.igual
-Bz <= igualazero:Bzero.igual
-contz <= igualazero:contadorzero.igual
-a <= regextra:regA.q[0]
-mult[0] <= registrador:regmult.q[0]
-mult[1] <= registrador:regmult.q[1]
-mult[2] <= registrador:regmult.q[2]
-mult[3] <= registrador:regmult.q[3]
-mult[4] <= registrador:regmult.q[4]
-mult[5] <= registrador:regmult.q[5]
-mult[6] <= registrador:regmult.q[6]
-mult[7] <= registrador:regmult.q[7]
-mult[8] <= registrador:regmult.q[8]
-mult[9] <= registrador:regmult.q[9]
-mult[10] <= registrador:regmult.q[10]
-mult[11] <= registrador:regmult.q[11]
-mult[12] <= registrador:regmult.q[12]
-mult[13] <= registrador:regmult.q[13]
-mult[14] <= registrador:regmult.q[14]
-mult[15] <= registrador:regmult.q[15]
+clk => registrador:regMult.clk
+cmdSetA => registrador:regA.carga
+cmdSetB => registrador:regB.carga
+cmdResetP => registrador:regP.reset
+cmdSetCont => registrador:regCont.carga
+cmdMinusCont => mux2para1:muxCont.sel
+cmdHalfP => registrador:regP.carga
+cmdHalfA => mux2para1:muxA.sel
+cmdSumPH => registrador:regPH.carga
+cmdSetMult => registrador:regMult.carga
+sttAEqualZero <= igualazero:compAZero.igual
+sttBEqualZero <= igualazero:compBZero.igual
+sttContEqualZero <= igualazero:compContZero.igual
+sttAZeroEqualOne <= igualaum:compAZeroUm.igual
+mult[0] <= registrador:regMult.q[0]
+mult[1] <= registrador:regMult.q[1]
+mult[2] <= registrador:regMult.q[2]
+mult[3] <= registrador:regMult.q[3]
+mult[4] <= registrador:regMult.q[4]
+mult[5] <= registrador:regMult.q[5]
+mult[6] <= registrador:regMult.q[6]
+mult[7] <= registrador:regMult.q[7]
+mult[8] <= <GND>
+mult[9] <= <GND>
+mult[10] <= <GND>
+mult[11] <= <GND>
+mult[12] <= <GND>
+mult[13] <= <GND>
+mult[14] <= <GND>
+mult[15] <= <GND>
 
 
-|multipler2v|bo:boSignal|flip_flop:flop
-clk => q~reg0.CLK
-d => q~reg0.DATAIN
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|multipler2v|bo:blocoOperativo|rbitshift:rbitshiftA
+d[0] => q[0].DATAIN
+d[1] => q[1].DATAIN
+d[2] => q[2].DATAIN
+d[3] => q[3].DATAIN
+d[4] => q[4].DATAIN
+d[5] => q[5].DATAIN
+d[6] => q[6].DATAIN
+d[7] => ~NO_FANOUT~
+q[0] <= d[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= d[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= d[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= d[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= d[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= d[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= d[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= <GND>
 
 
-|multipler2v|bo:boSignal|mux2para1:muxPH
+|multipler2v|bo:blocoOperativo|mux2para1:muxA
 a[0] => y.DATAB
 a[1] => y.DATAB
 a[2] => y.DATAB
@@ -136,147 +225,7 @@ y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|mux2para1:muxCont
-a[0] => y.DATAB
-a[1] => y.DATAB
-a[2] => y.DATAB
-a[3] => y.DATAB
-b[0] => y.DATAA
-b[1] => y.DATAA
-b[2] => y.DATAA
-b[3] => y.DATAA
-sel => y.OUTPUTSELECT
-sel => y.OUTPUTSELECT
-sel => y.OUTPUTSELECT
-sel => y.OUTPUTSELECT
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|multipler2v|bo:boSignal|mux1:muxCout
-a => y.DATAB
-b => y.DATAA
-sel => y.OUTPUTSELECT
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|multipler2v|bo:boSignal|regextra:regPH
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-clk => q[2]~reg0.CLK
-clk => q[3]~reg0.CLK
-clk => q[4]~reg0.CLK
-clk => q[5]~reg0.CLK
-clk => q[6]~reg0.CLK
-clk => q[7]~reg0.CLK
-carga => q[0].OUTPUTSELECT
-carga => q[1].OUTPUTSELECT
-carga => q[2].OUTPUTSELECT
-carga => q[3].OUTPUTSELECT
-carga => q[4].OUTPUTSELECT
-carga => q[5].OUTPUTSELECT
-carga => q[6].OUTPUTSELECT
-carga => q[7].OUTPUTSELECT
-carga => process_0.IN0
-sh => process_0.IN1
-in_sh => q[7].DATAB
-d[0] => q[0].DATAB
-d[1] => q[1].DATAB
-d[2] => q[2].DATAB
-d[3] => q[3].DATAB
-d[4] => q[4].DATAB
-d[5] => q[5].DATAB
-d[6] => q[6].DATAB
-d[7] => q[7].DATAB
-q[0] <> q[0]~reg0
-q[1] <> q[1]~reg0
-q[2] <> q[2]~reg0
-q[3] <> q[3]~reg0
-q[4] <> q[4]~reg0
-q[5] <> q[5]~reg0
-q[6] <> q[6]~reg0
-q[7] <> q[7]~reg0
-
-
-|multipler2v|bo:boSignal|regextra:regPL
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-clk => q[2]~reg0.CLK
-clk => q[3]~reg0.CLK
-clk => q[4]~reg0.CLK
-clk => q[5]~reg0.CLK
-clk => q[6]~reg0.CLK
-clk => q[7]~reg0.CLK
-carga => q[0].OUTPUTSELECT
-carga => q[1].OUTPUTSELECT
-carga => q[2].OUTPUTSELECT
-carga => q[3].OUTPUTSELECT
-carga => q[4].OUTPUTSELECT
-carga => q[5].OUTPUTSELECT
-carga => q[6].OUTPUTSELECT
-carga => q[7].OUTPUTSELECT
-carga => process_0.IN0
-sh => process_0.IN1
-in_sh => q[7].DATAB
-d[0] => q[0].DATAB
-d[1] => q[1].DATAB
-d[2] => q[2].DATAB
-d[3] => q[3].DATAB
-d[4] => q[4].DATAB
-d[5] => q[5].DATAB
-d[6] => q[6].DATAB
-d[7] => q[7].DATAB
-q[0] <> q[0]~reg0
-q[1] <> q[1]~reg0
-q[2] <> q[2]~reg0
-q[3] <> q[3]~reg0
-q[4] <> q[4]~reg0
-q[5] <> q[5]~reg0
-q[6] <> q[6]~reg0
-q[7] <> q[7]~reg0
-
-
-|multipler2v|bo:boSignal|regextra:regA
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-clk => q[2]~reg0.CLK
-clk => q[3]~reg0.CLK
-clk => q[4]~reg0.CLK
-clk => q[5]~reg0.CLK
-clk => q[6]~reg0.CLK
-clk => q[7]~reg0.CLK
-carga => q[0].OUTPUTSELECT
-carga => q[1].OUTPUTSELECT
-carga => q[2].OUTPUTSELECT
-carga => q[3].OUTPUTSELECT
-carga => q[4].OUTPUTSELECT
-carga => q[5].OUTPUTSELECT
-carga => q[6].OUTPUTSELECT
-carga => q[7].OUTPUTSELECT
-carga => process_0.IN0
-sh => process_0.IN1
-in_sh => q[7].DATAB
-d[0] => q[0].DATAB
-d[1] => q[1].DATAB
-d[2] => q[2].DATAB
-d[3] => q[3].DATAB
-d[4] => q[4].DATAB
-d[5] => q[5].DATAB
-d[6] => q[6].DATAB
-d[7] => q[7].DATAB
-q[0] <> q[0]~reg0
-q[1] <> q[1]~reg0
-q[2] <> q[2]~reg0
-q[3] <> q[3]~reg0
-q[4] <> q[4]~reg0
-q[5] <> q[5]~reg0
-q[6] <> q[6]~reg0
-q[7] <> q[7]~reg0
-
-
-|multipler2v|bo:boSignal|registrador:regB
+|multipler2v|bo:blocoOperativo|registrador:regA
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 clk => q[2]~reg0.CLK
@@ -293,6 +242,14 @@ carga => q[4]~reg0.ENA
 carga => q[5]~reg0.ENA
 carga => q[6]~reg0.ENA
 carga => q[7]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -311,26 +268,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|registrador:regCont
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-clk => q[2]~reg0.CLK
-clk => q[3]~reg0.CLK
-carga => q[0]~reg0.ENA
-carga => q[1]~reg0.ENA
-carga => q[2]~reg0.ENA
-carga => q[3]~reg0.ENA
-d[0] => q[0]~reg0.DATAIN
-d[1] => q[1]~reg0.DATAIN
-d[2] => q[2]~reg0.DATAIN
-d[3] => q[3]~reg0.DATAIN
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|multipler2v|bo:boSignal|registrador:regmult
+|multipler2v|bo:blocoOperativo|registrador:regB
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 clk => q[2]~reg0.CLK
@@ -339,14 +277,6 @@ clk => q[4]~reg0.CLK
 clk => q[5]~reg0.CLK
 clk => q[6]~reg0.CLK
 clk => q[7]~reg0.CLK
-clk => q[8]~reg0.CLK
-clk => q[9]~reg0.CLK
-clk => q[10]~reg0.CLK
-clk => q[11]~reg0.CLK
-clk => q[12]~reg0.CLK
-clk => q[13]~reg0.CLK
-clk => q[14]~reg0.CLK
-clk => q[15]~reg0.CLK
 carga => q[0]~reg0.ENA
 carga => q[1]~reg0.ENA
 carga => q[2]~reg0.ENA
@@ -355,14 +285,14 @@ carga => q[4]~reg0.ENA
 carga => q[5]~reg0.ENA
 carga => q[6]~reg0.ENA
 carga => q[7]~reg0.ENA
-carga => q[8]~reg0.ENA
-carga => q[9]~reg0.ENA
-carga => q[10]~reg0.ENA
-carga => q[11]~reg0.ENA
-carga => q[12]~reg0.ENA
-carga => q[13]~reg0.ENA
-carga => q[14]~reg0.ENA
-carga => q[15]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -371,14 +301,6 @@ d[4] => q[4]~reg0.DATAIN
 d[5] => q[5]~reg0.DATAIN
 d[6] => q[6]~reg0.DATAIN
 d[7] => q[7]~reg0.DATAIN
-d[8] => q[8]~reg0.DATAIN
-d[9] => q[9]~reg0.DATAIN
-d[10] => q[10]~reg0.DATAIN
-d[11] => q[11]~reg0.DATAIN
-d[12] => q[12]~reg0.DATAIN
-d[13] => q[13]~reg0.DATAIN
-d[14] => q[14]~reg0.DATAIN
-d[15] => q[15]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -387,17 +309,9 @@ q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|somadorsubtrator:somador
+|multipler2v|bo:blocoOperativo|somadorsubtrator:adderPHB
 a[0] => Add0.IN8
 a[0] => Add1.IN16
 a[1] => Add0.IN7
@@ -450,23 +364,148 @@ s[6] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
 s[7] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|somadorsubtrator:subrtador
-a[0] => Add0.IN4
-a[0] => Add1.IN8
-a[1] => Add0.IN3
-a[1] => Add1.IN7
-a[2] => Add0.IN2
-a[2] => Add1.IN6
-a[3] => Add0.IN1
-a[3] => Add1.IN5
-b[0] => Add0.IN8
-b[0] => Add1.IN4
-b[1] => Add0.IN7
-b[1] => Add1.IN3
-b[2] => Add0.IN6
-b[2] => Add1.IN2
-b[3] => Add0.IN5
-b[3] => Add1.IN1
+|multipler2v|bo:blocoOperativo|registrador:regPH
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+carga => q[4]~reg0.ENA
+carga => q[5]~reg0.ENA
+carga => q[6]~reg0.ENA
+carga => q[7]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bo:blocoOperativo|rbitshift:rbitshiftP
+d[0] => q[0].DATAIN
+d[1] => q[1].DATAIN
+d[2] => q[2].DATAIN
+d[3] => q[3].DATAIN
+d[4] => q[4].DATAIN
+d[5] => q[5].DATAIN
+d[6] => q[6].DATAIN
+d[7] => ~NO_FANOUT~
+q[0] <= d[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= d[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= d[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= d[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= d[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= d[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= d[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= <GND>
+
+
+|multipler2v|bo:blocoOperativo|registrador:regP
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+carga => q[4]~reg0.ENA
+carga => q[5]~reg0.ENA
+carga => q[6]~reg0.ENA
+carga => q[7]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bo:blocoOperativo|somadorsubtrator:minusCont
+a[0] => Add0.IN8
+a[0] => Add1.IN16
+a[1] => Add0.IN7
+a[1] => Add1.IN15
+a[2] => Add0.IN6
+a[2] => Add1.IN14
+a[3] => Add0.IN5
+a[3] => Add1.IN13
+a[4] => Add0.IN4
+a[4] => Add1.IN12
+a[5] => Add0.IN3
+a[5] => Add1.IN11
+a[6] => Add0.IN2
+a[6] => Add1.IN10
+a[7] => Add0.IN1
+a[7] => Add1.IN9
+b[0] => Add0.IN16
+b[0] => Add1.IN8
+b[1] => Add0.IN15
+b[1] => Add1.IN7
+b[2] => Add0.IN14
+b[2] => Add1.IN6
+b[3] => Add0.IN13
+b[3] => Add1.IN5
+b[4] => Add0.IN12
+b[4] => Add1.IN4
+b[5] => Add0.IN11
+b[5] => Add1.IN3
+b[6] => Add0.IN10
+b[6] => Add1.IN2
+b[7] => Add0.IN9
+b[7] => Add1.IN1
+op => operacao.OUTPUTSELECT
+op => operacao.OUTPUTSELECT
+op => operacao.OUTPUTSELECT
+op => operacao.OUTPUTSELECT
 op => operacao.OUTPUTSELECT
 op => operacao.OUTPUTSELECT
 op => operacao.OUTPUTSELECT
@@ -477,9 +516,134 @@ s[0] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
 s[1] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
 s[2] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
 s[3] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= operacao.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|igualazero:Azero
+|multipler2v|bo:blocoOperativo|mux2para1:muxCont
+a[0] => y.DATAB
+a[1] => y.DATAB
+a[2] => y.DATAB
+a[3] => y.DATAB
+a[4] => y.DATAB
+a[5] => y.DATAB
+a[6] => y.DATAB
+a[7] => y.DATAB
+b[0] => y.DATAA
+b[1] => y.DATAA
+b[2] => y.DATAA
+b[3] => y.DATAA
+b[4] => y.DATAA
+b[5] => y.DATAA
+b[6] => y.DATAA
+b[7] => y.DATAA
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bo:blocoOperativo|registrador:regCont
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+carga => q[4]~reg0.ENA
+carga => q[5]~reg0.ENA
+carga => q[6]~reg0.ENA
+carga => q[7]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bo:blocoOperativo|registrador:regMult
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+carga => q[4]~reg0.ENA
+carga => q[5]~reg0.ENA
+carga => q[6]~reg0.ENA
+carga => q[7]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bo:blocoOperativo|igualazero:compAZero
 a[0] => Equal0.IN17
 a[1] => Equal0.IN16
 a[2] => Equal0.IN15
@@ -491,7 +655,7 @@ a[7] => Equal0.IN10
 igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|igualazero:Bzero
+|multipler2v|bo:blocoOperativo|igualazero:compBZero
 a[0] => Equal0.IN17
 a[1] => Equal0.IN16
 a[2] => Equal0.IN15
@@ -503,11 +667,48 @@ a[7] => Equal0.IN10
 igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multipler2v|bo:boSignal|igualazero:contadorzero
-a[0] => Equal0.IN9
-a[1] => Equal0.IN8
-a[2] => Equal0.IN7
-a[3] => Equal0.IN6
+|multipler2v|bo:blocoOperativo|igualazero:compContZero
+a[0] => Equal0.IN17
+a[1] => Equal0.IN16
+a[2] => Equal0.IN15
+a[3] => Equal0.IN14
+a[4] => Equal0.IN13
+a[5] => Equal0.IN12
+a[6] => Equal0.IN11
+a[7] => Equal0.IN10
 igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bo:blocoOperativo|igualaum:compAZeroUm
+a => igual.DATAIN
+igual <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multipler2v|bc:blocoControle
+reset => state~10.DATAIN
+clk => state~8.DATAIN
+iniciar => state.OUTPUTSELECT
+iniciar => state.OUTPUTSELECT
+iniciar => state.OUTPUTSELECT
+iniciar => state.OUTPUTSELECT
+iniciar => state.OUTPUTSELECT
+iniciar => state.OUTPUTSELECT
+iniciar => state.OUTPUTSELECT
+sttAEqualZero => process_0.IN0
+sttBEqualZero => process_0.IN1
+sttContEqualZero => state.OUTPUTSELECT
+sttContEqualZero => state.OUTPUTSELECT
+sttContEqualZero => Selector5.IN4
+sttAZeroEqualOne => state.DATAA
+sttAZeroEqualOne => state.DATAA
+cmdSetA <= cmdSetA.DB_MAX_OUTPUT_PORT_TYPE
+cmdSetB <= cmdSetB.DB_MAX_OUTPUT_PORT_TYPE
+cmdResetP <= cmdResetP.DB_MAX_OUTPUT_PORT_TYPE
+cmdSetCont <= cmdSetCont.DB_MAX_OUTPUT_PORT_TYPE
+cmdMinusCont <= cmdMinusCont.DB_MAX_OUTPUT_PORT_TYPE
+cmdHalfP <= cmdHalfP.DB_MAX_OUTPUT_PORT_TYPE
+cmdHalfA <= cmdHalfA.DB_MAX_OUTPUT_PORT_TYPE
+cmdSumPH <= cmdSumPH.DB_MAX_OUTPUT_PORT_TYPE
+cmdSetMult <= cmdSetMult.DB_MAX_OUTPUT_PORT_TYPE
 
 

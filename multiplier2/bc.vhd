@@ -1,70 +1,101 @@
 LIBRARY ieee;
-USE ieee.std_logic_1164.all;
+USE ieee.std_logic_1164.ALL;
 
 ENTITY bc IS
-PORT (Reset, clk, inicio : IN STD_LOGIC;
-      Az, Bz : IN STD_LOGIC;
-      pronto, ini, CA, dec, CP: OUT STD_LOGIC );
-END bc;
+	PORT (
+		-- entradas
+		reset, clk, iniciar: IN STD_LOGIC;
+		-- status
+		sttAEqualZero,
+		sttBEqualZero,
+		sttContEqualZero,
+		sttAZeroEqualOne: IN STD_LOGIC;
+		-- comandos
+		cmdSetA,
+		cmdSetB,
+		cmdResetP,
+		cmdSetCont,
+		cmdMinusCont,
+		cmdHalfP,
+		cmdHalfA,
+		cmdSumPH,
+		cmdSetMult: OUT STD_LOGIC
+	);
+END ENTITY;
 
-ARCHITECTURE estrutura OF bc IS
-	TYPE state_type IS (S0, S1, S2, S3, S4, S5 );
+ARCHITECTURE bhv OF bc IS
+	TYPE state_type IS (S0, S1, S2, S3, S4, S5, S6);
 	SIGNAL state: state_type;
 BEGIN
-	PROCESS (clk, Reset)
+	PROCESS (clk, reset, iniciar, sttAEqualZero, sttBEqualZero, 
+				sttContEqualZero, sttAZeroEqualOne)
 	BEGIN
-		if(Reset = '1') THEN
-			state <= S0 ;
-		ELSIF (clk'EVENT AND clk = '1') THEN
+		IF reset = '1' THEN
+			state <= S0;
+		ELSIF clk'EVENT AND clk = '1' THEN
 			CASE state IS
 				WHEN S0 =>
-                    if (inicio = '0') then
-                        state <= S0;
-                    else
-                        state <= S1;
-                    end if;
+					IF iniciar = '1' THEN
+						state <= S1;
+					END IF;
 				WHEN S1 =>
-                    state <= S2;
+					state <= S2;
 				WHEN S2 =>
-                    if (Az = '1' or Bz = '1') then
-                        state <= S5;
-                    else
-                        state <= S3;
-                    end if;
+					IF sttAEqualZero = '0' AND sttBEqualZero = '0' THEN
+						state <= S3;
+					ELSE
+						state <= S6;
+					END IF;
 				WHEN S3 =>
-                    state <= S4;
+					IF sttContEqualZero = '1' THEN
+						state <= S6;
+					ELSE
+						IF sttAZeroEqualOne = '1' THEN
+							state <= S4;
+						ELSE
+							state <= S5;
+						END IF;
+					END IF;
 				WHEN S4 =>
-                    state <= S2;
+					state <= S5;
 				WHEN S5 =>
-                    state <= S0;
+					state <= S3;
+				WHEN S6 =>
+					state <= S0;
 			END CASE;
 		END IF;
 	END PROCESS;
-
+	
 	PROCESS (state)
-	BEGIN
+	begin
+		cmdSetA <= '0';
+		cmdSetB <= '0';
+		cmdResetP <= '0';
+		cmdSetCont <= '0';
+		cmdMinusCont <= '0';
+		cmdHalfP <= '0';
+		cmdHalfA <= '0';
+		cmdSumPH <= '0';
+		cmdSetMult <= '0';
+
 		CASE state IS
-			WHEN S0 =>
-				ini <= '0';
-				CA <= '0';
-				dec <= '0';
-				CP <= '0';
-				pronto <= '0';
 			WHEN S1 =>
-                ini <= '1';
-                CA  <= '1';
-			WHEN S2 =>
-                ini <= '0';
-                CA  <= '0';
-                dec <= '0';
-			WHEN S3 =>
-                CP  <= '1';
+				cmdSetA <= '1';
+				cmdSetB <= '1';
+				cmdResetP <= '1';
+				cmdSetCont <= '1';
 			WHEN S4 =>
-                CP  <= '0';
-                CA  <= '1';
-                dec <= '1';
+				cmdSumPH <= '1';
 			WHEN S5 =>
-                pronto <= '1';
+				cmdHalfP <= '1';
+				cmdSetA <= '1';
+				cmdHalfA <= '1';
+				cmdSetCont <= '1';
+				cmdMinusCont <= '1';
+			WHEN S6 =>
+				cmdSetMult <= '1';
+			WHEN OTHERS =>
+				NULL;
 		END CASE;
 	END PROCESS;
-END estrutura;
+END ARCHITECTURE;
