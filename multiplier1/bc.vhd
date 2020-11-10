@@ -55,10 +55,6 @@ BEGIN
 	BEGIN
 		CASE state IS
 			WHEN S0 =>
-				ini <= '0';
-				CA <= '0';
-				dec <= '0';
-				CP <= '0';
 				pronto <= '0';
 			WHEN S1 =>
                 ini <= '1';

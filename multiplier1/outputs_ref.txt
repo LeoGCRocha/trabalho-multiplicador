@@ -254,4 +254,3 @@
 11000011
 11010010
 11100001
-Simulation from testbench completed!
