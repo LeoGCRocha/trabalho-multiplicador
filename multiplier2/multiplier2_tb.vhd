@@ -61,8 +61,8 @@ begin
         variable val_SPACE : character;
 
         begin
-            file_open(input_buf, "D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/inputs.txt", read_mode);
-            file_open(output_buf, "D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/outputs_testbench.txt", write_mode);
+            file_open(input_buf, "/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier2/inputs.txt", read_mode);
+            file_open(output_buf, "/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier2/outputs_testbench.txt", write_mode);
 
             wait until reset = '0';
 
@@ -78,7 +78,11 @@ begin
                 wait for clkp; inicio <= '1';
                 wait for clkp; inicio <= '0';
 
-                wait for (2*n+3)*clkp;
+                -- wait for (2**n+3)*clkp; -- Pior caso
+                while (pronto = '0') loop  -- Roda até sinalizar que possui o resultado
+                    wait for clkp;
+                end loop;
+
                 write(write_col_to_output_buf, saida);
                 writeline(output_buf, write_col_to_output_buf);
 

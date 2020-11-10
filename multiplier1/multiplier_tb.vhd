@@ -72,6 +72,7 @@ begin
                 while (pronto = '0') loop  -- Roda até sinalizar que possui o resultado
                     wait for clkp;
                 end loop;
+
                 write(write_col_to_output_buf, saida);
                 writeline(output_buf, write_col_to_output_buf);
 
