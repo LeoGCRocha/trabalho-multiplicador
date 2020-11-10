@@ -1,52 +1,193 @@
 # Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
-# do multiplier2_run_msim_gate_vhdl.do 
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do multiplier2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {multiplier2.vho}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/somadorsubtrator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cycloneii_atom_pack
-# -- Loading package cycloneii_components
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity somadorsubtrator
+# -- Compiling architecture estrutura of somadorsubtrator
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity PL
-# -- Compiling architecture structure of PL
+# -- Compiling architecture estrutura of PL
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity PH
+# -- Compiling architecture estrutura of PH
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/mux2para1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package multiplier2_pkg
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualazero.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity igualazero
+# -- Compiling architecture estrutura of igualazero
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture estrutura of bo
+# ** Warning: D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd(99): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 # 
-vsim work.pl
-# vsim work.pl 
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier2_pkg
+# -- Compiling entity multiplier2
+# -- Compiling architecture estrutura of multiplier2
+# 
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping entity bc
+# -- Skipping entity bo
+# -- Skipping entity igualazero
+# -- Skipping entity multiplier2
+# -- Skipping package multiplier2_pkg
+# -- Skipping entity mux2para1
+# -- Skipping entity ph
+# -- Skipping entity pl
+# -- Skipping entity registrador
+# -- Skipping entity somadorsubtrator
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture estrutura of bo
+# -- Compiling entity igualazero
+# -- Compiling architecture estrutura of igualazero
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier2_pkg
+# -- Compiling entity multiplier2
+# -- Compiling architecture estrutura of multiplier2
+# -- Compiling package multiplier2_pkg
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# -- Compiling entity PH
+# -- Compiling architecture estrutura of PH
+# -- Compiling entity PL
+# -- Compiling architecture estrutura of PL
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# -- Compiling entity somadorsubtrator
+# -- Compiling architecture estrutura of somadorsubtrator
+vcom -reportprogress 300 -work work D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier2_pkg
+# -- Loading package std_logic_textio
+# -- Compiling entity multiplier2_tb
+# -- Compiling architecture tb of multiplier2_tb
+# -- Loading entity multiplier2
+vsim work.multiplier2_tb
+# vsim work.multiplier2_tb 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cycloneii.cycloneii_atom_pack(body)
-# Loading cycloneii.cycloneii_components
-# Loading work.pl(structure)
+# Loading ieee.numeric_std(body)
+# Loading work.multiplier2_pkg
+# Loading ieee.std_logic_textio(body)
+# Loading work.multiplier2_tb(tb)
+# Loading work.multiplier2(estrutura)
 # Loading ieee.std_logic_arith(body)
-# Loading cycloneii.cycloneii_io(structure)
-# Loading cycloneii.cycloneii_mux21(altvital)
-# Loading cycloneii.cycloneii_dffe(behave)
-# Loading cycloneii.cycloneii_asynch_io(behave)
-# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
-# Loading cycloneii.cycloneii_ena_reg(behave)
-# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
-# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
-# Loading cycloneii.cycloneii_and1(altvital)
-add wave -position end  sim:/pl/clk
-add wave -position end  sim:/pl/cPL
-add wave -position end  sim:/pl/srPL
-add wave -position end  sim:/pl/d
-add wave -position end  sim:/pl/q
-add wave -position end  sim:/pl/srIn
-do testePL.do
-run 120 ns
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.bo(estrutura)
+# Loading work.mux2para1(comportamento)
+# Loading work.ph(estrutura)
+# Loading work.pl(estrutura)
+# Loading work.registrador(estrutura)
+# Loading work.igualazero(estrutura)
+# Loading work.somadorsubtrator(estrutura)
+# Loading work.bc(estrutura)
+add wave -position end  sim:/multiplier2_tb/inicio
+add wave -position end  sim:/multiplier2_tb/reset
+add wave -position end  sim:/multiplier2_tb/clk
+add wave -position end  sim:/multiplier2_tb/pronto
+add wave -position end  sim:/multiplier2_tb/a
+add wave -position end  sim:/multiplier2_tb/b
+add wave -position end  sim:/multiplier2_tb/saida
+run 500 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/compA
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/Subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/Subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/compcont
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/soma
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/soma
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/four_bit/compB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /multiplier2_tb/UUT/four_bit/Subtracao
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 2  Instance: /multiplier2_tb/UUT/four_bit/soma

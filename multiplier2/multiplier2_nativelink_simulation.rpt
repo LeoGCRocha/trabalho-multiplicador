@@ -1,8 +1,9 @@
 Info: Start Nativelink Simulation process
+Info: NativeLink has detected VHDL design -- VHDL simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
-Sim Mode              :  Gate
+Sim Mode              :  RTL
 Family                :  cycloneii
 Quartus root          :  c:/altera/13.0/quartus/bin64/
 Quartus sim root      :  c:/altera/13.0/quartus/eda/sim_lib
@@ -10,66 +11,13 @@ Simulation Tool       :  modelsim-altera
 Simulation Language   :  vhdl
 Version               :  93
 Simulation Mode       :  GUI
-Sim Output File       :  multiplier2.vho
-Sim SDF file          :  multiplier2__vhdl.sdo
+Sim Output File       :  
+Sim SDF file          :  
 Sim dir               :  simulation\modelsim
 
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/altera/13.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File multiplier2_run_msim_gate_vhdl.do already exists - backing up current file as multiplier2_run_msim_gate_vhdl.do.bak1
-Probing transcript
-ModelSim-Altera Info: # Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
-ModelSim-Altera Info: # do multiplier2_run_msim_gate_vhdl.do 
-ModelSim-Altera Info: # if {[file exists gate_work]} {
-ModelSim-Altera Info: # 	vdel -lib gate_work -all
-ModelSim-Altera Info: # }
-ModelSim-Altera Info: # vlib gate_work
-ModelSim-Altera Info: # vmap work gate_work
-ModelSim-Altera Info: # Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
-ModelSim-Altera Info: # Modifying modelsim.ini
-ModelSim-Altera Warning: # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
-ModelSim-Altera Info: #          Updated modelsim.ini.
-ModelSim-Altera Info: # 
-ModelSim-Altera Info: # vcom -93 -work work {multiplier2.vho}
-ModelSim-Altera Info: # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-ModelSim-Altera Info: # -- Loading package STANDARD
-ModelSim-Altera Info: # -- Loading package TEXTIO
-ModelSim-Altera Info: # -- Loading package std_logic_1164
-ModelSim-Altera Info: # -- Loading package VITAL_Timing
-ModelSim-Altera Info: # -- Loading package VITAL_Primitives
-ModelSim-Altera Info: # -- Loading package cycloneii_atom_pack
-ModelSim-Altera Info: # -- Loading package cycloneii_components
-ModelSim-Altera Info: # -- Compiling entity PL
-ModelSim-Altera Info: # -- Compiling architecture structure of PL
-ModelSim-Altera Info: # 
-ModelSim-Altera Info: vsim work.pl
-ModelSim-Altera Info: # vsim work.pl 
-ModelSim-Altera Info: # Loading std.standard
-ModelSim-Altera Info: # Loading std.textio(body)
-ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
-ModelSim-Altera Info: # Loading ieee.vital_timing(body)
-ModelSim-Altera Info: # Loading ieee.vital_primitives(body)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_atom_pack(body)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_components
-ModelSim-Altera Info: # Loading work.pl(structure)
-ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_io(structure)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_mux21(altvital)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_dffe(behave)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_asynch_io(behave)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_ena_reg(behave)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
-ModelSim-Altera Info: # Loading cycloneii.cycloneii_and1(altvital)
-ModelSim-Altera Info: add wave -position end  sim:/pl/clk
-ModelSim-Altera Info: add wave -position end  sim:/pl/cPL
-ModelSim-Altera Info: add wave -position end  sim:/pl/srPL
-ModelSim-Altera Info: add wave -position end  sim:/pl/d
-ModelSim-Altera Info: add wave -position end  sim:/pl/q
-ModelSim-Altera Info: add wave -position end  sim:/pl/srIn
-ModelSim-Altera Info: do testePL.do
-ModelSim-Altera Info: run 120 ns
-Info: NativeLink simulation flow was successful
+Warning: File multiplier2_run_msim_rtl_vhdl.do already exists - backing up current file as multiplier2_run_msim_rtl_vhdl.do.bak4
+Info: Spawning ModelSim-Altera Simulation software 

@@ -2,22 +2,22 @@ m255
 K3
 13
 cModel Technology
-Z0 d/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/simulation/modelsim
+Z0 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier1\simulation\modelsim
 Ebc
-Z1 w1603978170
+Z1 w1604778525
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 d/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/simulation/modelsim
-Z5 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd
-Z6 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd
+Z4 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier1\simulation\modelsim
+Z5 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bc.vhd
+Z6 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bc.vhd
 l0
 L4
 VR@@E5gSJVn[i0>H[=JWll0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1604782694.302968
-Z9 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd|
-Z10 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd|
+Z8 !s108 1604991695.040000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bc.vhd|
+Z10 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bc.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
 !s100 fQGT>oOkb94QN1KSW<e:O0
@@ -39,29 +39,29 @@ R12
 !s100 ;cU:XlCAM4lQfaH<[h]l73
 !i10b 1
 Ebo
-Z13 w1604350482
-Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z15 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R1
+Z13 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 R2
 R3
 R4
-Z16 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd
-Z17 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd
+Z15 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd
+Z16 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd
 l0
 L5
 VK5JiiiEa;KilEDEeX2nlC0
 R7
 31
-Z18 !s108 1604782694.411250
-Z19 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd|
-Z20 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd|
+Z17 !s108 1604991696.517000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd|
+Z19 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd|
 R11
 R12
 !s100 _X1QdmfO[oeEzOjl9PEVb0
 !i10b 1
 Aestrutura
+R13
 R14
-R15
 R2
 R3
 DEx4 work 2 bo 0 22 K5JiiiEa;KilEDEeX2nlC0
@@ -70,37 +70,37 @@ L20
 VG;cJR@m`bj]H;f7KHG`bS1
 R7
 31
+R17
 R18
 R19
-R20
 R11
 R12
 !s100 <U<NfGU9ZiGf[h3CGZ0112
 !i10b 1
 Eigualazero
-Z21 w1604350600
+R1
+R13
 R14
-R15
 R2
 R3
 R4
-Z22 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd
-Z23 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd
+Z20 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/igualazero.vhd
+Z21 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/igualazero.vhd
 l0
 L5
 VH3k:U=fM8b^c[72l3ATjD2
 R7
 31
-Z24 !s108 1604782694.373165
-Z25 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd|
-Z26 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd|
+Z22 !s108 1604991695.938000
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/igualazero.vhd|
+Z24 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/igualazero.vhd|
 R11
 R12
 !s100 W[US3PRNoOoP95cU8T:WJ3
 !i10b 1
 Aestrutura
+R13
 R14
-R15
 R2
 R3
 DEx4 work 10 igualazero 0 22 H3k:U=fM8b^c[72l3ATjD2
@@ -109,57 +109,57 @@ L11
 V7>h<SlB[RZ@io<Bz`hRc_1
 R7
 31
+R22
+R23
 R24
-R25
-R26
 R11
 R12
 !s100 J7z4cHh`jg9iKzBd?Pj5L1
 !i10b 1
 Emultiplier
-Z27 w1604352002
-Z28 DPx4 work 14 multiplier_pkg 0 22 KJ8QRdI@<2R^2L[8I?a4h3
-Z29 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z25 w1604967262
+Z26 DPx4 work 14 multiplier_pkg 0 22 KJ8QRdI@<2R^2L[8I?a4h3
+Z27 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-Z30 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd
-Z31 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd
+Z28 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier.vhd
+Z29 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier.vhd
 l0
 L6
 Veee]=P74[]12cR_ea^24i2
 R7
 31
-Z32 !s108 1604782694.431375
-Z33 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd|
-Z34 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd|
+Z30 !s108 1604991696.704000
+Z31 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier.vhd|
+Z32 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier.vhd|
 R11
 R12
 !s100 >eakk@<Ihz9@IcPi92nUC1
 !i10b 1
 Aestrutura
-R28
-R29
+R26
+R27
 R2
 R3
-Z35 DEx4 work 10 multiplier 0 22 eee]=P74[]12cR_ea^24i2
+Z33 DEx4 work 10 multiplier 0 22 eee]=P74[]12cR_ea^24i2
 l35
 L15
 VUgz8D<?cO<70?0AXSoBXT2
 R7
 31
+R30
+R31
 R32
-R33
-R34
 R11
 R12
 !s100 ^TW2db348l=<MQZ:IFKg21
 !i10b 1
 Pmultiplier_pkg
-w1604782587
+w1604785599
 R4
-8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd
-F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd
+8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_pkg.vhd
+FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_pkg.vhd
 l0
 L1
 VKJ8QRdI@<2R^2L[8I?a4h3
@@ -169,19 +169,19 @@ R11
 R12
 !s100 [8NNiX?^UL:7F^_i^lWEe0
 !i10b 1
-!s108 1604782694.288849
-!s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd|
-!s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd|
+!s108 1604991694.837000
+!s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_pkg.vhd|
+!s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_pkg.vhd|
 Emultiplier_tb
-Z36 w1604784855
-Z37 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
-R28
-R29
+Z34 w1604971268
+Z35 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R26
+R27
 R2
 R3
 R4
-Z38 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd
-Z39 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd
+Z36 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_tb.vhd
+Z37 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_tb.vhd
 l0
 L8
 VmKaS`hN4I3AiW>[0hAMmX2
@@ -189,46 +189,46 @@ VmKaS`hN4I3AiW>[0hAMmX2
 R7
 32
 !i10b 1
-!s108 1604784864.255799
-!s90 -reportprogress|300|-work|work|-O0|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd|
-!s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd|
-Z40 o-work work -O0
+Z38 !s108 1604991716.175000
+Z39 !s90 -reportprogress|300|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_tb.vhd|
+Z40 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_tb.vhd|
+Z41 o-work work -O0
 R12
 Atb
+R33
 R35
-R37
-R28
-R29
+R26
+R27
 R2
 R3
 DEx4 work 13 multiplier_tb 0 22 mKaS`hN4I3AiW>[0hAMmX2
 l25
 L12
-V;mFcV6H=o<d3=X`Xb:]E<1
+VGJC0_e[`T:@@2;=oV2S2V1
+!s100 I429`[FmdWYbbC8^<Xkg`2
 R7
 32
-!s108 1604782699.738798
-!s90 -reportprogress|300|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd|
-!s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd|
-R40
-R12
-!s100 djXFNHALieDz4W_D[liDY2
 !i10b 1
+R38
+R39
+R40
+R41
+R12
 Emux2para1
-Z41 w1604350517
+R1
 R2
 R3
 R4
-Z42 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd
-Z43 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd
+Z42 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/mux2para1.vhd
+Z43 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/mux2para1.vhd
 l0
 L4
 VJ34bEJYb09bhFXQ:]nN^13
 R7
 31
-Z44 !s108 1604782694.357512
-Z45 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd|
-Z46 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd|
+Z44 !s108 1604991695.729000
+Z45 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/mux2para1.vhd|
+Z46 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/mux2para1.vhd|
 R11
 R12
 !s100 ZjB<L=mK96TU5bRQ83EO?3
@@ -250,29 +250,29 @@ R12
 !s100 GloL6K7`7YX[@cVoNMLWz3
 !i10b 1
 Eregistrador
-Z47 w1604350618
+R1
+R13
 R14
-R15
 R2
 R3
 R4
-Z48 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd
-Z49 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd
+Z47 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador.vhd
+Z48 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador.vhd
 l0
 L5
 V[>SIiN2nh0YUW72K[7I4Y2
 R7
 31
-Z50 !s108 1604782694.338407
-Z51 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd|
-Z52 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd|
+Z49 !s108 1604991695.504000
+Z50 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador.vhd|
+Z51 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador.vhd|
 R11
 R12
 !s100 TCjKbU]@3gjOAl`;BNK=P0
 !i10b 1
 Aestrutura
+R13
 R14
-R15
 R2
 R3
 DEx4 work 11 registrador 0 22 [>SIiN2nh0YUW72K[7I4Y2
@@ -281,37 +281,37 @@ L12
 VaMX4FdYM^XZ:Hm2bX_G4e1
 R7
 31
+R49
 R50
 R51
-R52
 R11
 R12
 !s100 6b_@zoCnm6lcnlC[7_hbL1
 !i10b 1
 Eregistrador_r
-Z53 w1604350612
+R1
+R13
 R14
-R15
 R2
 R3
 R4
-Z54 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd
-Z55 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd
+Z52 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador_r.vhd
+Z53 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador_r.vhd
 l0
 L5
 VL<JGPffS]Mhd9hiEIV1J12
 R7
 31
-Z56 !s108 1604782694.319433
-Z57 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd|
-Z58 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd|
+Z54 !s108 1604991695.261000
+Z55 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador_r.vhd|
+Z56 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador_r.vhd|
 R11
 R12
 !s100 D;FJGzAJXlS^eYlD1ePzN2
 !i10b 1
 Aestrutura
+R13
 R14
-R15
 R2
 R3
 DEx4 work 13 registrador_r 0 22 L<JGPffS]Mhd9hiEIV1J12
@@ -320,37 +320,37 @@ L12
 VW@cN5iQd@WFc_BgE<DG;M2
 R7
 31
+R54
+R55
 R56
-R57
-R58
 R11
 R12
 !s100 ?[8U0lL_;@b_0nOmTSTET0
 !i10b 1
 Esomadorsubtrator
-Z59 w1604350593
+R1
+R13
 R14
-R15
 R2
 R3
 R4
-Z60 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd
-Z61 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd
+Z57 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/somadorsubtrator.vhd
+Z58 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/somadorsubtrator.vhd
 l0
 L5
 V]lQ:anz=?=B6g8Bag7^^93
 R7
 31
-Z62 !s108 1604782694.392066
-Z63 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd|
-Z64 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd|
+Z59 !s108 1604991696.311000
+Z60 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/somadorsubtrator.vhd|
+Z61 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/somadorsubtrator.vhd|
 R11
 R12
 !s100 B6H;`9dYM[<?2eeUdjiO;0
 !i10b 1
 Aestrutura
+R13
 R14
-R15
 R2
 R3
 DEx4 work 16 somadorsubtrator 0 22 ]lQ:anz=?=B6g8Bag7^^93
@@ -359,9 +359,9 @@ L12
 V833R`WUi_l1dlb_aCC89P1
 R7
 31
-R62
-R63
-R64
+R59
+R60
+R61
 R11
 R12
 !s100 LD@436F`::486Hza2><bo1

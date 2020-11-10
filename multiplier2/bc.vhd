@@ -2,10 +2,13 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
 ENTITY bc IS
-PORT (Reset, clk, inicio : IN STD_LOGIC;
-      Az, Bz : IN STD_LOGIC;
-      pronto : OUT STD_LOGIC;
-      ini, CA, dec, CP: OUT STD_LOGIC );
+	PORT (Reset, clk, iniciar : IN STD_LOGIC;
+			--sinal que vem do BC
+			Az, Bz, contz, A0 : IN STD_LOGIC;
+			--sinal saida p/ multiplier
+			pronto : OUT STD_LOGIC;
+			--sinal de controle do BO
+			mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA: OUT STD_LOGIC );
 END bc;
 
 -- Sinais de comando
@@ -16,7 +19,7 @@ END bc;
 
 
 ARCHITECTURE estrutura OF bc IS
-	TYPE state_type IS (S0, S1, S2, S3, S4, S5 );
+	TYPE state_type IS (S0, S1, S2, S3, S4, S5, S6 );
 	SIGNAL state: state_type;
 BEGIN
 	-- Logica de proximo estado (e registrador de estado)
@@ -27,25 +30,34 @@ BEGIN
 		ELSIF (clk'EVENT AND clk = '1') THEN
 			CASE state IS
 				WHEN S0 =>
-                    if (inicio = '0') then
+                    if (iniciar = '0') then
                         state <= S0;
                     else
                         state <= S1;
-                    end if;
+                    end if;						  
 				WHEN S1 =>
-                    state <= S2;
+                    state <= S2;						  
 				WHEN S2 =>
                     if (Az = '1' or Bz = '1') then
-                        state <= S5;
+                        state <= S6;
                     else
                         state <= S3;
-                    end if;
+                    end if;						  
 				WHEN S3 =>
-                    state <= S4;
+                    if (contz = '1' AND A0 = '0') then -- se cont = 0
+                        state <= S6;
+                    end if;						  
+						  if (contz = '0' AND A0 = '0') then -- se cont = 0
+                        state <= S5;
+                    else
+                        state <= S4;
+                    end if;						  
 				WHEN S4 =>
-                    state <= S2;
+                    state <= S5;						  
 				WHEN S5 =>
-                    state <= S0;
+                    state <= S3;						  
+				WHEN S6 =>
+                    state <= S0;						  
 			END CASE;
 		END IF;
 	END PROCESS;
@@ -55,26 +67,103 @@ BEGIN
 	BEGIN
 		CASE state IS
 			WHEN S0 =>
-				ini <= '0';
-				CA <= '0';
-				dec <= '0';
-				CP <= '0';
-				pronto <= '0';
-			WHEN S1 =>
-                ini <= '1';
-                CA  <= '1';
+						pronto <= '1';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
+			WHEN S1 =>					
+						pronto <= '0';
+						mPH <= '1';
+						srPh <= '0';
+						cPH <= '1';
+						srPL <= '0';
+						cPL <= '1';
+						cB <= '1';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '1';
+						ccont <= '1';
+						srAA <= '0';
+						cAA <= '1';
 			WHEN S2 =>
-                ini <= '0';
-                CA  <= '0';
-                dec <= '0';
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 			WHEN S3 =>
-                CP  <= '1';
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 			WHEN S4 =>
-                CP  <= '0';
-                CA  <= '1';
-                dec <= '1';
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '1';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 			WHEN S5 =>
-                pronto <= '1';
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '1';
+						cPH <= '0';
+						srPL <= '1';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '1';
+						mcont <= '0';
+						ccont <= '1';
+						srAA <= '1';
+						cAA <= '0';
+			WHEN S6 =>
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '1';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 		END CASE;
 	END PROCESS;
 END estrutura;

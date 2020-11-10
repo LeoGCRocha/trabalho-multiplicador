@@ -3,42 +3,405 @@ K3
 13
 cModel Technology
 Z0 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier2\simulation\modelsim
-Eph
-Z1 w1604782128
-Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier2\simulation\modelsim
-Z7 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd
-Z8 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd
+Ebc
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+31
+Z3 w1604978415
+Z4 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier2\simulation\modelsim
+Z5 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bc.vhd
+Z6 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bc.vhd
 l0
-L5
-V9gcDBaIZo^AUdPH2Wa:Y[3
-!s100 P32AGiOhI;ozYl]?;jgGi1
-Z9 OV;C;10.1d;51
-31
+L4
+V=XB;D7j`5h4o<`oZ4A^ai2
+Z7 OV;C;10.1d;51
+Z8 !s108 1604991447.143000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bc.vhd|
+Z10 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bc.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
 !i10b 1
-Z10 !s108 1604782516.380000
-Z11 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd|
-Z12 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd|
-Z13 o-93 -work work -O0
-Z14 tExplicit 1
+!s100 hD=jYeAdBnDkd4ZhB?4oT0
 Aestrutura
+R1
 R2
-R3
-R4
-R5
-DEx4 work 2 ph 0 22 9gcDBaIZo^AUdPH2Wa:Y[3
-l14
-L13
-V8K1[ghmbRJOMXV_;974Xi0
-!s100 g:H<P0G8[ekoQ67heH7W?1
-R9
+DEx4 work 2 bc 0 22 =XB;D7j`5h4o<`oZ4A^ai2
 31
-!i10b 1
+l24
+L21
+V1XZ?b>Pf=e?@:1`I=UIQ;0
+R7
+R8
+R9
 R10
 R11
 R12
+!i10b 1
+!s100 Qd]ZW?BWc2oGN]4Y>2WbH2
+Ebo
+Z13 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R1
+R2
+31
+Z15 w1604990509
+R4
+Z16 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd
+Z17 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd
+l0
+L5
+VljAYb`hN2;PHMJ0Z9L9>`2
+R7
+Z18 !s108 1604991446.902000
+Z19 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd|
+Z20 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd|
+R11
+R12
+!i10b 1
+!s100 aYW]>K7:1gFHUlCiakU6N3
+Aestrutura
 R13
 R14
+R1
+R2
+DEx4 work 2 bo 0 22 ljAYb`hN2;PHMJ0Z9L9>`2
+31
+l69
+L18
+VLIO]=J4=5h2=zc=h6e?YS0
+R7
+R18
+R19
+R20
+R11
+R12
+!i10b 1
+!s100 lKlFCKMlZ;@BBIBPIik^X2
+Eigualazero
+R13
+R14
+R1
+R2
+31
+Z21 w1604778525
+R4
+Z22 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualazero.vhd
+Z23 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualazero.vhd
+l0
+L5
+VH3k:U=fM8b^c[72l3ATjD2
+R7
+Z24 !s108 1604991446.735000
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualazero.vhd|
+Z26 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualazero.vhd|
+R11
+R12
+!i10b 1
+!s100 W[US3PRNoOoP95cU8T:WJ3
+Aestrutura
+R13
+R14
+R1
+R2
+DEx4 work 10 igualazero 0 22 H3k:U=fM8b^c[72l3ATjD2
+31
+l12
+L11
+V7>h<SlB[RZ@io<Bz`hRc_1
+R7
+R24
+R25
+R26
+R11
+R12
+!i10b 1
+!s100 J7z4cHh`jg9iKzBd?Pj5L1
+Emultiplier2
+Z27 DPx4 work 15 multiplier2_pkg 0 22 nhH0QMC9VMEESFRnU=d5C0
+Z28 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+31
+Z29 w1604986946
+R4
+Z30 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2.vhd
+Z31 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2.vhd
+l0
+L6
+VcXi`70<j8YH]?8Aij1I>D3
+R7
+Z32 !s108 1604991447.329000
+Z33 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2.vhd|
+Z34 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2.vhd|
+R11
+R12
+!i10b 1
+!s100 z[iJV;2XDV1ALI5LD7CUR0
+Aestrutura
+R27
+R28
+R1
+R2
+Z35 DEx4 work 11 multiplier2 0 22 cXi`70<j8YH]?8Aij1I>D3
+31
+l42
+L15
+VoZZDdIX2A2nh_i[2N5PnE1
+R7
+R32
+R33
+R34
+R11
+R12
+!i10b 1
+!s100 ho`UQX^30LFOM4aCz?Q@>1
+Pmultiplier2_pkg
+31
+w1604987904
+R4
+8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_pkg.vhd
+FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_pkg.vhd
+l0
+L1
+VnhH0QMC9VMEESFRnU=d5C0
+R7
+R11
+R12
+!i10b 1
+!s100 [8laeB`VV2U0f0Nf6ER>b3
+!s108 1604991446.493000
+!s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_pkg.vhd|
+!s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_pkg.vhd|
+Emultiplier2_tb
+Z36 w1604991195
+Z37 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R27
+R28
+R1
+R2
+R4
+Z38 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_tb.vhd
+Z39 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_tb.vhd
+l0
+L9
+Vn3m=1GKk`@12mLO1B;9FH2
+!s100 <aTk3b<g495j`TgAK^Z;R1
+R7
+32
+!i10b 1
+Z40 !s108 1604991584.185000
+Z41 !s90 -reportprogress|300|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_tb.vhd|
+Z42 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_tb.vhd|
+Z43 o-work work -O0
+R12
+Atb
+R35
+R37
+R27
+R28
+R1
+R2
+DEx4 work 14 multiplier2_tb 0 22 n3m=1GKk`@12mLO1B;9FH2
+l28
+L13
+Voi^J>dPiBbY6b0MG0216Y3
+!s100 DO88ZNl^B4`e4?YMHTT6o0
+R7
+32
+!i10b 1
+R40
+R41
+R42
+R43
+R12
+Emux2para1
+R1
+R2
+31
+R21
+R4
+Z44 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/mux2para1.vhd
+Z45 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/mux2para1.vhd
+l0
+L4
+VJ34bEJYb09bhFXQ:]nN^13
+R7
+Z46 !s108 1604991446.330000
+Z47 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/mux2para1.vhd|
+Z48 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/mux2para1.vhd|
+R11
+R12
+!i10b 1
+!s100 ZjB<L=mK96TU5bRQ83EO?3
+Acomportamento
+R1
+R2
+DEx4 work 9 mux2para1 0 22 J34bEJYb09bhFXQ:]nN^13
+31
+l12
+L11
+VhhOVOlgEYHo;GLlaBzZ[h2
+R7
+R46
+R47
+R48
+R11
+R12
+!i10b 1
+!s100 GloL6K7`7YX[@cVoNMLWz3
+Eph
+R13
+R14
+R1
+R2
+31
+Z49 w1604985469
+R4
+Z50 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd
+Z51 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd
+l0
+L5
+VLN13El]_JVnQ1g[G_>ZAd1
+R7
+Z52 !s108 1604991446.116000
+Z53 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd|
+Z54 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PH.vhd|
+R11
+R12
+!i10b 1
+!s100 V@^V@ZnIgoT@E3Naa5=cK0
+Aestrutura
+R13
+R14
+R1
+R2
+DEx4 work 2 ph 0 22 LN13El]_JVnQ1g[G_>ZAd1
+31
+l16
+L13
+V@AC4_>6RAgJac108EW`B52
+R7
+R52
+R53
+R54
+R11
+R12
+!i10b 1
+!s100 <LVHIX7OJRY_bJRiCM7Ne3
+Epl
+R13
+R14
+R1
+R2
+31
+Z55 w1604989485
+R4
+Z56 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PL.vhd
+Z57 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PL.vhd
+l0
+L5
+VKl3>0M9cf?Pk0OUHLoDf`0
+R7
+Z58 !s108 1604991445.874000
+Z59 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PL.vhd|
+Z60 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/PL.vhd|
+R11
+R12
+!i10b 1
+!s100 XfoZCXWmK0zE3d3=L5Xdm3
+Aestrutura
+R13
+R14
+R1
+R2
+DEx4 work 2 pl 0 22 Kl3>0M9cf?Pk0OUHLoDf`0
+31
+l16
+L13
+VPoa]h8U@`_?0<h7T<Dib=2
+R7
+R58
+R59
+R60
+R11
+R12
+!i10b 1
+!s100 z[8PoEJU1[GKE8h@_DYJP2
+Eregistrador
+R13
+R14
+R1
+R2
+31
+Z61 w1604971268
+R4
+Z62 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/registrador.vhd
+Z63 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/registrador.vhd
+l0
+L5
+V[>SIiN2nh0YUW72K[7I4Y2
+R7
+Z64 !s108 1604991445.697000
+Z65 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/registrador.vhd|
+Z66 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/registrador.vhd|
+R11
+R12
+!i10b 1
+!s100 TCjKbU]@3gjOAl`;BNK=P0
+Aestrutura
+R13
+R14
+R1
+R2
+DEx4 work 11 registrador 0 22 [>SIiN2nh0YUW72K[7I4Y2
+31
+l13
+L12
+VaMX4FdYM^XZ:Hm2bX_G4e1
+R7
+R64
+R65
+R66
+R11
+R12
+!i10b 1
+!s100 6b_@zoCnm6lcnlC[7_hbL1
+Esomadorsubtrator
+R13
+R14
+R1
+R2
+31
+Z67 w1604987374
+R4
+Z68 8D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/somadorsubtrator.vhd
+Z69 FD:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/somadorsubtrator.vhd
+l0
+L5
+VCZhWF8XBl>mlGKSG[09493
+R7
+Z70 !s108 1604991445.444000
+Z71 !s90 -reportprogress|300|-93|-work|work|D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/somadorsubtrator.vhd|
+Z72 !s107 D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/somadorsubtrator.vhd|
+R11
+R12
+!i10b 1
+!s100 DXo07ziIoYDeRfGdOS`id0
+Aestrutura
+R13
+R14
+R1
+R2
+DEx4 work 16 somadorsubtrator 0 22 CZhWF8XBl>mlGKSG[09493
+31
+l16
+L13
+VVV[L2IE=76cf`^na6]lKk2
+R7
+R70
+R71
+R72
+R11
+R12
+!i10b 1
+!s100 L>L01ZMXl[Z54nBNQZjOV3

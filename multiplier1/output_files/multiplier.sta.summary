@@ -3,44 +3,44 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'bc:bloco_controle|state.S3'
-Slack : -3.293
-TNS   : -5.427
-
-Type  : Slow Model Setup 'bc:bloco_controle|state.S0'
-Slack : -2.713
-TNS   : -2.713
+Slack : -3.970
+TNS   : -7.754
 
 Type  : Slow Model Setup 'bc:bloco_controle|state.S1'
-Slack : -2.315
-TNS   : -2.315
+Slack : -3.578
+TNS   : -3.793
+
+Type  : Slow Model Setup 'bc:bloco_controle|state.S0'
+Slack : -3.347
+TNS   : -3.347
 
 Type  : Slow Model Setup 'clk'
-Slack : -2.288
-TNS   : -34.104
+Slack : -2.245
+TNS   : -32.528
 
 Type  : Slow Model Hold 'clk'
-Slack : -2.518
-TNS   : -19.646
-
-Type  : Slow Model Hold 'bc:bloco_controle|state.S1'
-Slack : -0.845
-TNS   : -0.845
+Slack : -3.376
+TNS   : -22.301
 
 Type  : Slow Model Hold 'bc:bloco_controle|state.S3'
-Slack : -0.537
-TNS   : -0.567
+Slack : -0.642
+TNS   : -0.642
+
+Type  : Slow Model Hold 'bc:bloco_controle|state.S1'
+Slack : -0.413
+TNS   : -0.413
 
 Type  : Slow Model Hold 'bc:bloco_controle|state.S0'
-Slack : 2.764
+Slack : 3.394
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'clk'
-Slack : 1.107
+Slack : 0.933
 TNS   : 0.000
 
 Type  : Slow Model Removal 'clk'
-Slack : -0.337
-TNS   : -2.696
+Slack : -0.163
+TNS   : -1.304
 
 Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -1.380
@@ -59,44 +59,44 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'bc:bloco_controle|state.S3'
-Slack : -1.232
-TNS   : -1.961
-
-Type  : Fast Model Setup 'bc:bloco_controle|state.S0'
-Slack : -0.963
-TNS   : -0.963
+Slack : -1.587
+TNS   : -3.098
 
 Type  : Fast Model Setup 'bc:bloco_controle|state.S1'
-Slack : -0.794
-TNS   : -0.794
+Slack : -1.427
+TNS   : -1.427
+
+Type  : Fast Model Setup 'bc:bloco_controle|state.S0'
+Slack : -1.310
+TNS   : -1.310
 
 Type  : Fast Model Setup 'clk'
-Slack : -0.450
-TNS   : -4.560
+Slack : -0.436
+TNS   : -3.904
 
 Type  : Fast Model Hold 'clk'
-Slack : -1.560
-TNS   : -20.624
-
-Type  : Fast Model Hold 'bc:bloco_controle|state.S1'
-Slack : -0.357
-TNS   : -0.357
+Slack : -1.872
+TNS   : -22.379
 
 Type  : Fast Model Hold 'bc:bloco_controle|state.S3'
-Slack : -0.238
-TNS   : -0.238
+Slack : -0.283
+TNS   : -0.283
+
+Type  : Fast Model Hold 'bc:bloco_controle|state.S1'
+Slack : -0.161
+TNS   : -0.161
 
 Type  : Fast Model Hold 'bc:bloco_controle|state.S0'
-Slack : 1.572
+Slack : 1.916
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'clk'
-Slack : 1.404
+Slack : 1.334
 TNS   : 0.000
 
 Type  : Fast Model Removal 'clk'
-Slack : -0.524
-TNS   : -4.192
+Slack : -0.454
+TNS   : -3.632
 
 Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
