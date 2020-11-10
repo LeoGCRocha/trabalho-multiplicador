@@ -4,10 +4,10 @@ USE ieee.numeric_std.ALL;
 USE ieee.std_logic_unsigned.ALL;
 
 ENTITY bo IS
-	GENERIC (N: NATURAL := 8);
+	GENERIC (N: NATURAL );
 	PORT (
 		-- entradas
-		entA, entB, A, B, P, PH, cont: IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
+		entA, entB: IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
 		clk: IN STD_LOGIC;
 		-- comandos
 		cmdSetA,

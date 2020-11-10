@@ -1,26 +1,27 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
 # do multiplier_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_pkg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Compiling package multiplier_pkg
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bc.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bc
 # -- Compiling architecture estrutura of bc
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador_r.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -29,7 +30,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity registrador_r
 # -- Compiling architecture estrutura of registrador_r
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -38,14 +39,14 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity registrador
 # -- Compiling architecture estrutura of registrador
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/mux2para1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2para1
 # -- Compiling architecture comportamento of mux2para1
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/igualazero.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,7 +55,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity igualazero
 # -- Compiling architecture estrutura of igualazero
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/somadorsubtrator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -63,7 +64,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity somadorsubtrator
 # -- Compiling architecture estrutura of somadorsubtrator
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd}
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -72,8 +73,9 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity bo
 # -- Compiling architecture estrutura of bo
-# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd(76): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd}
+# ** Warning: D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd(76): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -83,7 +85,61 @@
 # -- Compiling entity multiplier
 # -- Compiling architecture estrutura of multiplier
 # 
-vcom -reportprogress 300 -work work /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd
+vcom -reportprogress 300 -work work D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier_pkg
+# -- Loading package std_logic_textio
+# -- Compiling entity multiplier_tb
+# -- Compiling architecture tb of multiplier_tb
+# -- Loading entity multiplier
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping entity bc
+# -- Skipping entity bo
+# -- Skipping entity igualazero
+# -- Skipping entity multiplier
+# -- Skipping package multiplier_pkg
+# -- Skipping entity multiplier_tb
+# -- Skipping entity mux2para1
+# -- Skipping entity registrador
+# -- Skipping entity registrador_r
+# -- Skipping entity somadorsubtrator
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture estrutura of bo
+# -- Compiling entity igualazero
+# -- Compiling architecture estrutura of igualazero
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier_pkg
+# -- Compiling entity multiplier
+# -- Compiling architecture estrutura of multiplier
+# -- Compiling package multiplier_pkg
+# -- Loading package multiplier_pkg
+# -- Loading package std_logic_textio
+# -- Compiling entity multiplier_tb
+# -- Compiling architecture tb of multiplier_tb
+# -- Loading entity multiplier
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# -- Compiling entity registrador_r
+# -- Compiling architecture estrutura of registrador_r
+# -- Compiling entity somadorsubtrator
+# -- Compiling architecture estrutura of somadorsubtrator
+vcom -reportprogress 300 -work work D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_tb.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,66 +169,113 @@ vsim work.multiplier_tb
 # Loading work.somadorsubtrator(estrutura)
 # Loading work.igualazero(estrutura)
 # Loading work.bc(estrutura)
-add wave -position insertpoint  \
-sim:/multiplier_tb/a \
-sim:/multiplier_tb/b \
-sim:/multiplier_tb/clk \
-sim:/multiplier_tb/clkp \
-sim:/multiplier_tb/inicio \
-sim:/multiplier_tb/n \
-sim:/multiplier_tb/pronto \
-sim:/multiplier_tb/reset \
-sim:/multiplier_tb/saida
-run 5000ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraBz
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraAz
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 10 ns  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
-restart
-run 500ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraBz
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraAz
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 10 ns  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
-run 500ns
 run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraBz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraAz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+stop
+add wave -position end  sim:/multiplier_tb/n
+add wave -position end  sim:/multiplier_tb/inicio
+add wave -position end  sim:/multiplier_tb/reset
+add wave -position end  sim:/multiplier_tb/clk
+add wave -position end  sim:/multiplier_tb/pronto
+add wave -position end  sim:/multiplier_tb/a
+add wave -position end  sim:/multiplier_tb/b
+add wave -position end  sim:/multiplier_tb/saida
+add wave -position end  sim:/multiplier_tb/clkp
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: kuru  Hostname: kovir  ProcessID: 6246
+# 
+#           Attempting to use alternate WLF file "./wlft8d31ym".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft8d31ym
+# 
+restart -f
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraBz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraAz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# Break key hit 
+quit -sim
+vsim work.multiplier_tb
+# vsim work.multiplier_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.multiplier_pkg
+# Loading ieee.std_logic_textio(body)
+# Loading work.multiplier_tb(tb)
+# Loading work.multiplier(estrutura)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.bo(estrutura)
+# Loading work.mux2para1(comportamento)
+# Loading work.registrador_r(estrutura)
+# Loading work.registrador(estrutura)
+# Loading work.somadorsubtrator(estrutura)
+# Loading work.igualazero(estrutura)
+# Loading work.bc(estrutura)
+add wave -position end  sim:/multiplier_tb/inicio
+add wave -position end  sim:/multiplier_tb/reset
+add wave -position end  sim:/multiplier_tb/clk
+add wave -position end  sim:/multiplier_tb/pronto
+add wave -position end  sim:/multiplier_tb/a
+add wave -position end  sim:/multiplier_tb/b
+add wave -position end  sim:/multiplier_tb/saida
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: kuru  Hostname: kovir  ProcessID: 6246
+# 
+#           Attempting to use alternate WLF file "./wlftcx5gs8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftcx5gs8
+# 
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraBz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/geraAz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /multiplier_tb/UUT/four_bit/somasub
 # Break key hit 
 # Simulation stop requested.
-vcom -work work -O0 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package multiplier_pkg
-# -- Loading package std_logic_textio
-# -- Compiling entity multiplier_tb
-# -- Compiling architecture tb of multiplier_tb
-# -- Loading entity multiplier
-# ** Error: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd(71): Signal "pronto" is type ieee.std_logic_1164.STD_LOGIC; expecting type std.STANDARD.TIME.
-# ** Error: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_tb.vhd(86): VHDL Compiler exiting
-# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.

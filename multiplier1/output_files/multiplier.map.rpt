@@ -1,6 +1,6 @@
 Analysis & Synthesis report for multiplier
-Sat Nov  7 17:57:55 2020
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Nov 09 21:45:26 2020
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -53,24 +53,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov  7 17:57:55 2020           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; multiplier                                      ;
-; Top-level Entity Name              ; multiplier                                      ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 62                                              ;
-;     Total combinational functions  ; 53                                              ;
-;     Dedicated logic registers      ; 30                                              ;
-; Total registers                    ; 30                                              ;
-; Total pins                         ; 28                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Nov 09 21:45:26 2020      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; multiplier                                 ;
+; Top-level Entity Name              ; multiplier                                 ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 62                                         ;
+;     Total combinational functions  ; 53                                         ;
+;     Dedicated logic registers      ; 30                                         ;
+; Total registers                    ; 30                                         ;
+; Total pins                         ; 28                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -78,9 +78,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6       ;                    ;
 ; Top-level entity name                                                      ; multiplier         ; multiplier         ;
-; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -119,12 +118,14 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -132,7 +133,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
 ; Report Parameter Settings                                                  ; On                 ; On                 ;
 ; Report Source Assignments                                                  ; On                 ; On                 ;
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
@@ -164,56 +165,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 6      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; multiplier_pkg.vhd               ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier_pkg.vhd   ;         ;
-; bc.vhd                           ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bc.vhd               ;         ;
-; registrador_r.vhd                ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador_r.vhd    ;         ;
-; registrador.vhd                  ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/registrador.vhd      ;         ;
-; mux2para1.vhd                    ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/mux2para1.vhd        ;         ;
-; igualazero.vhd                   ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/igualazero.vhd       ;         ;
-; somadorsubtrator.vhd             ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/somadorsubtrator.vhd ;         ;
-; multiplier.vhd                   ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/multiplier.vhd       ;         ;
-; bo.vhd                           ; yes             ; User VHDL File  ; /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1/bo.vhd               ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; multiplier_pkg.vhd               ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier_pkg.vhd   ;         ;
+; bc.vhd                           ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bc.vhd               ;         ;
+; registrador_r.vhd                ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador_r.vhd    ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/registrador.vhd      ;         ;
+; mux2para1.vhd                    ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/mux2para1.vhd        ;         ;
+; igualazero.vhd                   ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/igualazero.vhd       ;         ;
+; somadorsubtrator.vhd             ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/somadorsubtrator.vhd ;         ;
+; multiplier.vhd                   ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/multiplier.vhd       ;         ;
+; bo.vhd                           ; yes             ; User VHDL File  ; D:/Git_Desktop_Files/trabalho-multiplicador/multiplier1/bo.vhd               ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 62    ;
-;                                             ;       ;
-; Total combinational functions               ; 53    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 5     ;
-;     -- 3 input functions                    ; 32    ;
-;     -- <=2 input functions                  ; 16    ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 45    ;
-;     -- arithmetic mode                      ; 8     ;
-;                                             ;       ;
-; Total registers                             ; 30    ;
-;     -- Dedicated logic registers            ; 30    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 28    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 30    ;
-; Total fan-out                               ; 255   ;
-; Average fan-out                             ; 2.30  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 62        ;
+;                                             ;           ;
+; Total combinational functions               ; 53        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 5         ;
+;     -- 3 input functions                    ; 32        ;
+;     -- <=2 input functions                  ; 16        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 45        ;
+;     -- arithmetic mode                      ; 8         ;
+;                                             ;           ;
+; Total registers                             ; 30        ;
+;     -- Dedicated logic registers            ; 30        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 28        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 30        ;
+; Total fan-out                               ; 283       ;
+; Average fan-out                             ; 2.04      ;
++---------------------------------------------+-----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -221,17 +222,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
-; |multiplier                      ; 53 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |multiplier                                      ; work         ;
-;    |bc:bloco_controle|           ; 16 (16)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bc:bloco_controle                    ; work         ;
-;    |bo:four_bit|                 ; 37 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit                          ; work         ;
-;       |igualazero:geraAz|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraAz        ; work         ;
-;       |igualazero:geraBz|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraBz        ; work         ;
-;       |mux2para1:mux1|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux1           ; work         ;
-;       |mux2para1:mux2|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux2           ; work         ;
-;       |registrador:regA|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regA         ; work         ;
-;       |registrador:regB|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regB         ; work         ;
-;       |registrador_r:regP|       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador_r:regP       ; work         ;
-;       |somadorsubtrator:somasub| ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|somadorsubtrator:somasub ; work         ;
+; |multiplier                      ; 53 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |multiplier                                      ;              ;
+;    |bc:bloco_controle|           ; 16 (16)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bc:bloco_controle                    ;              ;
+;    |bo:four_bit|                 ; 37 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit                          ;              ;
+;       |igualazero:geraAz|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraAz        ;              ;
+;       |igualazero:geraBz|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|igualazero:geraBz        ;              ;
+;       |mux2para1:mux1|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux1           ;              ;
+;       |mux2para1:mux2|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|mux2para1:mux2           ;              ;
+;       |registrador:regA|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regA         ;              ;
+;       |registrador:regB|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador:regB         ;              ;
+;       |registrador_r:regP|       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|registrador_r:regP       ;              ;
+;       |somadorsubtrator:somasub| ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplier|bo:four_bit|somadorsubtrator:somasub ;              ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -425,8 +426,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov  7 17:57:53 2020
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Nov 09 21:45:22 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplier -c multiplier
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 0 entities, in source file multiplier_pkg.vhd
@@ -480,6 +481,7 @@ Info (10041): Inferred latch for "CA" at bc.vhd(54)
 Info (10041): Inferred latch for "ini" at bc.vhd(54)
 Warning (13012): Latch bc:bloco_controle|pronto has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal bc:bloco_controle|state.S5
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
@@ -487,9 +489,9 @@ Info (21057): Implemented 99 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 71 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 621 megabytes
-    Info: Processing ended: Sat Nov  7 17:57:55 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4616 megabytes
+    Info: Processing ended: Mon Nov 09 21:45:26 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 

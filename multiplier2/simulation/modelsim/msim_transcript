@@ -1,28 +1,160 @@
-# Reading pref.tcl
-# do multipler2v_run_msim_gate_vhdl.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do multiplier2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work gate_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
 # 
-# vcom -93 -work work {multipler2v_6_1200mv_85c_slow.vho}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:52:23 on Nov 09,2020
-# vcom -reportprogress 300 -93 -work work multipler2v_6_1200mv_85c_slow.vho 
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/somadorsubtrator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
-# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/André/Documents/GitHub/trabalho-multiplicador/multiplier2/simulation/modelsim/gate_work/_lib.qdb): unable to open database file
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vcom-9) Problem while writing token file "C:/Users/André/Documents/GitHub/trabalho-multiplicador/multiplier2/simulation/modelsim/gate_work/_temp/vcomkmcg4y".
-# ** Note: multipler2v_6_1200mv_85c_slow.vho(30): VHDL Compiler exiting
-# End time: 00:52:23 on Nov 09,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./multipler2v_run_msim_gate_vhdl.do line 8
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {multipler2v_6_1200mv_85c_slow.vho}"
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity somadorsubtrator
+# -- Compiling architecture estrutura of somadorsubtrator
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/rbitshift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity rbitshift
+# -- Compiling architecture estrutura of rbitshift
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/mux2para1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package multiplier2_pkg
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualazero.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity igualazero
+# -- Compiling architecture estrutura of igualazero
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/igualaum.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity igualaum
+# -- Compiling architecture estrutura of igualaum
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture bhv of bo
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bc
+# -- Compiling architecture bhv of bc
+# vcom -93 -work work {D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier2_pkg
+# -- Loading package std_logic_textio
+# -- Compiling entity multiplier2
+# -- Compiling architecture estrutura of multiplier2
+# 
+vcom -reportprogress 300 -work work D:/Git_Desktop_Files/trabalho-multiplicador/multiplier2/multiplier2_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier2_pkg
+# -- Loading package std_logic_textio
+# -- Compiling entity multiplier2_tb
+# -- Compiling architecture tb of multiplier2_tb
+# -- Loading entity multiplier2
+vsim work.multiplier2_tb
+# vsim work.multiplier2_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.multiplier2_pkg
+# Loading ieee.std_logic_textio(body)
+# Loading work.multiplier2_tb(tb)
+# Loading work.multiplier2(estrutura)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.bo(bhv)
+# Loading work.rbitshift(estrutura)
+# Loading work.mux2para1(comportamento)
+# Loading work.registrador(estrutura)
+# Loading work.somadorsubtrator(estrutura)
+# Loading work.igualazero(estrutura)
+# Loading work.igualaum(estrutura)
+# Loading work.bc(bhv)
+add wave -position end  sim:/multiplier2_tb/inicio
+add wave -position end  sim:/multiplier2_tb/reset
+add wave -position end  sim:/multiplier2_tb/clk
+add wave -position end  sim:/multiplier2_tb/pronto
+add wave -position end  sim:/multiplier2_tb/a
+add wave -position end  sim:/multiplier2_tb/b
+add wave -position end  sim:/multiplier2_tb/saida
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/blocoOperativo/compContZero
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/blocoOperativo/compBZero
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/blocoOperativo/compAZero
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/blocoOperativo/minusCont
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/blocoOperativo/adderPHB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier2_tb/UUT/blocoOperativo/adderPHB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 62500 ps  Iteration: 2  Instance: /multiplier2_tb/UUT/blocoOperativo/adderPHB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 587500 ps  Iteration: 2  Instance: /multiplier2_tb/UUT/blocoOperativo/adderPHB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 662500 ps  Iteration: 2  Instance: /multiplier2_tb/UUT/blocoOperativo/adderPHB
+# Break key hit 
+# Simulation stop requested.
+# Break key hit 
+restart -f

@@ -2,47 +2,51 @@ m255
 K3
 13
 cModel Technology
-Z0 d/home/kuru/UFSC/SD/QuartusProjects/TP/simulation/modelsim
+Z0 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier1\simulation\modelsim
 Emultiplier
-Z1 w1604668467
-Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
-Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
-Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
-Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
-Z8 d/home/kuru/UFSC/SD/QuartusProjects/TP/simulation/modelsim
-Z9 8multiplier.vho
-Z10 Fmultiplier.vho
-l0
-L34
-VRFe2Wo25>LAXjlnN6EGcE2
-!s100 bWbaXcMRHYHzeA?mKc<Hj0
-Z11 OV;C;10.1d;51
+Z1 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 cd[Seo6Ho1SGM]T7J5PZf1
+Z2 DPx10 cycloneive 21 cycloneive_components 0 22 nEgJbijGI2K;f9eTCY=a53
+Z3 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z4 DPx6 altera 11 dffeas_pack 0 22 V<:VM@_ZRfA@BFU^UjV7P1
+Z5 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 DPx6 altera 28 altera_primitives_components 0 22 NkeTOLzIAn1B7JGKi`Mk?0
 31
 !i10b 1
-Z12 !s108 1604668866.645218
-Z13 !s90 -reportprogress|300|-93|-work|work|multiplier.vho|
-Z14 !s107 multiplier.vho|
-Z15 o-93 -work work -O0
-Z16 tExplicit 1
+Z9 w1604966420
+Z10 dD:\Git_Desktop_Files\trabalho-multiplicador\multiplier1\simulation\modelsim
+Z11 8multiplier.vho
+Z12 Fmultiplier.vho
+l0
+L36
+VmVH6nKeDMUSYWhKXXH>Hm2
+Z13 OV;C;10.1d;51
+Z14 !s108 1604966438.900000
+Z15 !s90 -reportprogress|300|-93|-work|work|multiplier.vho|
+Z16 !s107 multiplier.vho|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+!s100 C9E8[^<1>]6WfVm<dhdcH1
 Astructure
+R1
 R2
 R3
 R4
 R5
 R6
 R7
-DEx4 work 10 multiplier 0 22 RFe2Wo25>LAXjlnN6EGcE2
-l246
-L101
-VZ:ACNH]PiKM:2:L6c4[K^2
-!s100 5Rli=VQ<iC>X]:^YoBlAY2
-R11
+R8
+DEx4 work 10 multiplier 0 22 mVH6nKeDMUSYWhKXXH>Hm2
 31
 !i10b 1
-R12
+l202
+L79
+VCYbzXhB6[gKfP_hMP:mFJ0
 R13
 R14
 R15
 R16
+R17
+R18
+!s100 caoIDTAjX>ZMlzmY43oYn0
