@@ -1,103 +1,169 @@
 LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
-USE ieee.std_logic_unsigned.ALL;
+USE ieee.std_logic_1164.all;
 
 ENTITY bc IS
-	PORT (
-		-- entradas
-		reset, clk, iniciar: IN STD_LOGIC;
-		-- status
-		sttAEqualZero,
-		sttBEqualZero,
-		sttContEqualZero,
-		sttAZeroEqualOne: IN STD_LOGIC;
-		-- comandos
-		cmdSetA,
-		cmdSetB,
-		cmdResetP,
-		cmdSetCont,
-		cmdMinusCont,
-		cmdHalfP,
-		cmdHalfA,
-		cmdSumPH,
-		cmdSetMult: OUT STD_LOGIC
-	);
-END ENTITY;
+	PORT (Reset, clk, iniciar : IN STD_LOGIC;
+			--sinal que vem do BC
+			Az, Bz, contz, A0 : IN STD_LOGIC;
+			--sinal saida p/ multiplier
+			pronto : OUT STD_LOGIC;
+			--sinal de controle do BO
+			mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA: OUT STD_LOGIC );
+END bc;
 
-ARCHITECTURE bhv OF bc IS
-	TYPE state_type IS (S0, S1, S2, S3, S4, S5, S6);
+-- Sinais de comando
+-- ini = RstP = mA = CB  => ini=1 somente em S1
+-- CA=1 em S1 e em S4
+-- dec = op = m1 = m2  => dec=1 somente em S4 (estado no qual ocorre A <= A - 1 )
+-- CP=1 somente em S3 (estado no qual ocorre P <= P + B )
+
+
+ARCHITECTURE estrutura OF bc IS
+	TYPE state_type IS (S0, S1, S2, S3, S4, S5, S6 );
 	SIGNAL state: state_type;
 BEGIN
-	PROCESS (clk, reset, iniciar, sttAEqualZero, sttBEqualZero, 
-				sttContEqualZero, sttAZeroEqualOne)
+	-- Logica de proximo estado (e registrador de estado)
+	PROCESS (clk, Reset)
 	BEGIN
-		IF reset = '1' THEN
-			state <= S0;
-		ELSIF clk'EVENT AND clk = '1' THEN
+		if(Reset = '1') THEN
+			state <= S0 ;
+		ELSIF (clk'EVENT AND clk = '1') THEN
 			CASE state IS
 				WHEN S0 =>
-					IF iniciar = '1' THEN
-						state <= S1;
-					END IF;
+                    if (iniciar = '0') then
+                        state <= S0;
+                    else
+                        state <= S1;
+                    end if;						  
 				WHEN S1 =>
-					state <= S2;
+                    state <= S2;						  
 				WHEN S2 =>
-					IF sttAEqualZero = '0' AND sttBEqualZero = '0' THEN
-						state <= S3;
-					ELSE
-						state <= S6;
-					END IF;
+                    if (Az = '1' or Bz = '1') then
+                        state <= S6;
+                    else
+                        state <= S3;
+                    end if;						  
 				WHEN S3 =>
-					IF sttContEqualZero = '1' THEN
-						state <= S6;
-					ELSE
-						IF sttAZeroEqualOne = '1' THEN
-							state <= S4;
-						ELSE
-							state <= S5;
-						END IF;
-					END IF;
+                    if (contz = '1' AND A0 = '0') then -- se cont = 0
+                        state <= S6;
+                    end if;						  
+						  if (contz = '0' AND A0 = '0') then -- se cont = 0
+                        state <= S5;
+                    else
+                        state <= S4;
+                    end if;						  
 				WHEN S4 =>
-					state <= S5;
+                    state <= S5;						  
 				WHEN S5 =>
-					state <= S3;
+                    state <= S3;						  
 				WHEN S6 =>
-					state <= S0;
+                    state <= S0;						  
 			END CASE;
 		END IF;
 	END PROCESS;
 	
+	-- Logica de saida
 	PROCESS (state)
-	begin
-		cmdSetA <= '0';
-		cmdSetB <= '0';
-		cmdResetP <= '0';
-		cmdSetCont <= '0';
-		cmdMinusCont <= '0';
-		cmdHalfP <= '0';
-		cmdHalfA <= '0';
-		cmdSumPH <= '0';
-		cmdSetMult <= '0';
-
+	BEGIN
 		CASE state IS
-			WHEN S1 =>
-				cmdSetA <= '1';
-				cmdSetB <= '1';
-				cmdResetP <= '1';
-				cmdSetCont <= '1';
+			WHEN S0 =>
+						pronto <= '1';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
+			WHEN S1 =>					
+						pronto <= '0';
+						mPH <= '1';
+						srPh <= '0';
+						cPH <= '1';
+						srPL <= '0';
+						cPL <= '1';
+						cB <= '1';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '1';
+						ccont <= '1';
+						srAA <= '0';
+						cAA <= '1';
+			WHEN S2 =>
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
+			WHEN S3 =>
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 			WHEN S4 =>
-				cmdSumPH <= '1';
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '1';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 			WHEN S5 =>
-				cmdHalfP <= '1';
-				cmdSetA <= '1';
-				cmdHalfA <= '1';
-				cmdSetCont <= '1';
-				cmdMinusCont <= '1';
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '1';
+						cPH <= '0';
+						srPL <= '1';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '0';
+						mFF <= '1';
+						mcont <= '0';
+						ccont <= '1';
+						srAA <= '1';
+						cAA <= '0';
 			WHEN S6 =>
-				cmdSetMult <= '1';
-			WHEN OTHERS =>
-				NULL;
+						pronto <= '0';
+						mPH <= '0';
+						srPh <= '0';
+						cPH <= '0';
+						srPL <= '0';
+						cPL <= '0';
+						cB <= '0';
+						cmult <= '1';
+						mFF <= '0';
+						mcont <= '0';
+						ccont <= '0';
+						srAA <= '0';
+						cAA <= '0';
 		END CASE;
 	END PROCESS;
-END ARCHITECTURE;
+END estrutura;

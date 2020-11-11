@@ -1,110 +1,55 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 use work.multiplier2_pkg.all;
-use std.textio.all;
-use ieee.std_logic_textio.all;
-
-ENTITY multiplier2 IS
-	GENERIC (N: NATURAL := n_BITS);
-	PORT (
-		-- entradas
-		entA, entB: IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
-		clk, reset, iniciar, pronto: IN STD_LOGIC;
-		-- saidas
-		mult: OUT STD_LOGIC_VECTOR((2*N) - 1 DOWNTO 0)
-	);
+ 
+entity multiplier2 is
+    generic (n:natural := n_BITS);
+    port(entA, entB   : in std_logic_vector(n-1 downto 0);
+			iniciar, Reset, ck :in std_logic;
+			pronto : out std_logic;
+			mult : out std_logic_vector((2*n)-1 downto 0)
+			);
 END multiplier2;
 
 ARCHITECTURE estrutura OF multiplier2 IS
-	
-	COMPONENT bc IS
-		PORT (
-			-- entradas
-			reset, clk, iniciar: IN STD_LOGIC;
-			-- status
-			sttAEqualZero,
-			sttBEqualZero,
-			sttContEqualZero,
-			sttAZeroEqualOne: IN STD_LOGIC;
-			-- comandos
-			cmdSetA,
-			cmdSetB,
-			cmdResetP,
-			cmdSetCont,
-			cmdMinusCont,
-			cmdHalfP,
-			cmdHalfA,
-			cmdSumPH,
-			cmdSetMult: OUT STD_LOGIC
-		);
-	END COMPONENT;
 
-	COMPONENT bo IS
-		GENERIC (N: NATURAL);
-		PORT (
-			-- entradas
-			entA, entB: IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
-			clk: IN STD_LOGIC;
-			-- comandos
-			cmdSetA,
-			cmdSetB,
-			cmdResetP,
-			cmdSetCont,
-			cmdMinusCont,
-			cmdHalfP,
-			cmdHalfA,
-			cmdSumPH,
-			cmdSetMult: IN STD_LOGIC;
-			-- status
-			sttAEqualZero,
-			sttBEqualZero,
-			sttContEqualZero,
-			sttAZeroEqualOne: OUT STD_LOGIC;
-			-- saidas
-			mult: OUT STD_LOGIC_VECTOR((2*N) - 1 DOWNTO 0)
-		);
-	END COMPONENT;
+COMPONENT bo is
+	generic (n:natural);
+	PORT (clk : IN STD_LOGIC;
+				-- entrada dos sionais de controle
+				mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA : IN STD_LOGIC;
+				-- entrada dos operandos
+				entA, entB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+				--sinal que vai para o BC
+				Az, Bz, contz, A0 : OUT STD_LOGIC;
+				--resultado da multiplicaçao
+				saida : OUT STD_LOGIC_VECTOR((2*n)-1 DOWNTO 0));
+END COMPONENT;
 
-	SIGNAL cmdSetA, cmdSetB, cmdResetP, cmdSetCont, cmdMinusCont, cmdHalfP,
-			 cmdHalfA, cmdSumPH, cmdSetMult: STD_LOGIC;
-	
-	SIGNAL sttAEqualZero, sttBEqualZero, sttContEqualZero, sttAZeroEqualOne: STD_LOGIC;
+COMPONENT bc IS
+	PORT (Reset, clk, iniciar : IN STD_LOGIC;
+			--sinal que vem do BC
+			Az, Bz, contz, A0 : IN STD_LOGIC;
+			--sinal saida p/ multiplier
+			pronto : OUT STD_LOGIC;
+			--sinal de controle do BO
+			mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA: OUT STD_LOGIC );
+END COMPONENT;
+
+SIGNAL mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA, Az, Bz, contz, A0: STD_LOGIC;
 
 BEGIN
-	blocoOperativo: bo GENERIC MAP (N) PORT MAP (
-		entA, entB,
-		clk, 
-		cmdSetA, 
-		cmdSetB,
-		cmdResetP,
-		cmdSetCont,
-		cmdMinusCont,
-		cmdHalfP,
-		cmdHalfA,
-		cmdSumPH,
-		cmdSetMult,
-		sttAEqualZero,
-		sttBEqualZero,
-		sttContEqualZero,
-		sttAZeroEqualOne,
-		mult
-	);
 
-	blocoControle: bc PORT MAP (
-		reset, clk, iniciar,
-		sttAEqualZero,
-		sttBEqualZero,
-		sttContEqualZero,
-		sttAZeroEqualOne,
-		cmdSetA,
-		cmdSetB,
-		cmdResetP,
-		cmdSetCont,
-		cmdMinusCont,
-		cmdHalfP,
-		cmdHalfA,
-		cmdSumPH,
-		cmdSetMult
-	);
+	four_bit : bo 
+		generic map (n => n)
+		port map(clk=>ck, mPH=>mPH, srPh=>srPh, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
+					mcont=>mcont, ccont=>ccont, srAA=>srAA, cAA=>cAA, entA=>entA, entB=>entB, Az=>Az, Bz=>Bz, 
+					contz=>contz, A0=>A0, saida=>mult);
+	
+	bloco_controle : bc
+		port map(Reset=>Reset, clk=>ck, iniciar=>iniciar, Az=>Az, Bz=>Bz, contz=>contz, A0=>A0, pronto=>pronto, 
+					mPH=>mPH, srPh=>srPh, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
+					mcont=>mcont, ccont=>ccont, srAA=>srAA, cAA=>cAA);
+
 END estrutura;
