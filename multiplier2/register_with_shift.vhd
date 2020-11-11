@@ -13,12 +13,11 @@ ARCHITECTURE estrutura OF register_with_shift is
 signal var: STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 
 BEGIN
-	PROCESS(clk)
+	PROCESS(clk, cRegister, srRegister)
 	BEGIN
 		IF (clk'EVENT AND clk = '1' AND cRegister = '1') THEN
 			var <= d;			
-		END IF;
-		IF (clk'EVENT AND clk = '1' AND srRegister = '1') THEN
+		ELSIF (clk'EVENT AND clk = '1' AND srRegister = '1') THEN
 			var <= srIN & var(n-1 downto 1);
 		END IF;
 	END PROCESS;

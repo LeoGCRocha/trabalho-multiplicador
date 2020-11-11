@@ -6,7 +6,7 @@ ENTITY bo is
 	generic (n:natural);
 	PORT (clk : IN STD_LOGIC;
 			-- entrada dos sionais de controle
-			mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA : IN STD_LOGIC;
+			mPH, srPH, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA : IN STD_LOGIC;
 			-- entrada dos operandos
 			entA, entB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 			--sinal que vai para o BC
@@ -58,7 +58,7 @@ PORT (clk: IN STD_LOGIC;
 	  q : OUT STD_LOGIC);
 END COMPONENT;
 
-SIGNAL saidaSOMA, saimux1, saidaPH, saidaB, saidaPL, saidaA, entradamuxFF : STD_LOGIC_VECTOR (n-1 DOWNTO 0);
+SIGNAL saidaSOMA, saimux1, saidaPH, saidaB, saidaPL, saidaA : STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 SIGNAL entadaregMult : STD_LOGIC_VECTOR ((2*n)-1 DOWNTO 0);
 SIGNAL saidamuxcont, saidaMENOS, saidacont, menos_um : STD_LOGIC_VECTOR (3 DOWNTO 0); --ta meio errado pq não tá igual no slide mas funciona
 SIGNAL saimuxFF, saiFF_vector, carry_vector	: STD_LOGIC_VECTOR (0 downto 0);
@@ -99,8 +99,6 @@ BEGIN
 		PORT MAP (clk, saimuxFF(0), saiFF);
 	saiFF_vector(0) <= saiFF;
 
-	entradamuxFF <= (0 => carry, others => '0');
-	
 	regMult: registrador
 		GENERIC MAP (n => 2*n)
 		PORT MAP (clk=>clk, carga=>cmult, d=>entadaregMult, q=>saida);

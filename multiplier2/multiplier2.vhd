@@ -18,7 +18,7 @@ COMPONENT bo is
 	generic (n:natural);
 	PORT (clk : IN STD_LOGIC;
 				-- entrada dos sionais de controle
-				mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA : IN STD_LOGIC;
+				mPH, srPH, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA : IN STD_LOGIC;
 				-- entrada dos operandos
 				entA, entB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 				--sinal que vai para o BC
@@ -34,22 +34,22 @@ COMPONENT bc IS
 			--sinal saida p/ multiplier
 			pronto : OUT STD_LOGIC;
 			--sinal de controle do BO
-			mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA: OUT STD_LOGIC );
+			mPH, srPH, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA: OUT STD_LOGIC );
 END COMPONENT;
 
-SIGNAL mPH, srPh, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA, Az, Bz, contz, A0: STD_LOGIC;
+SIGNAL mPH, srPH, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA, Az, Bz, contz, A0: STD_LOGIC;
 
 BEGIN
 
 	four_bit : bo 
 		generic map (n => n)
-		port map(clk=>ck, mPH=>mPH, srPh=>srPh, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
+		port map(clk=>ck, mPH=>mPH, srPH=>srPH, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
 					mcont=>mcont, ccont=>ccont, srAA=>srAA, cAA=>cAA, entA=>entA, entB=>entB, Az=>Az, Bz=>Bz, 
 					contz=>contz, A0=>A0, saida=>mult);
 	
 	bloco_controle : bc
 		port map(Reset=>Reset, clk=>ck, iniciar=>iniciar, Az=>Az, Bz=>Bz, contz=>contz, A0=>A0, pronto=>pronto, 
-					mPH=>mPH, srPh=>srPh, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
+					mPH=>mPH, srPH=>srPH, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
 					mcont=>mcont, ccont=>ccont, srAA=>srAA, cAA=>cAA);
 
 END estrutura;
