@@ -44,20 +44,19 @@ BEGIN
                         state <= S3;
                     end if;						  
 				WHEN S3 =>
-                    if (contz = '1' AND A0 = '0') then -- se cont = 0
-                        state <= S6;
-                    end if;						  
-						  if (contz = '0' AND A0 = '0') then -- se cont = 0
+                    if (contz = '1') then -- se cont = 0
+						state <= S6;
+					elsif (A0 = '0') then -- se o bit menos significativo de A for igual a 0
                         state <= S5;
                     else
                         state <= S4;
                     end if;						  
 				WHEN S4 =>
-                    state <= S5;						  
+                    state <= S5;
 				WHEN S5 =>
-                    state <= S3;						  
+                    state <= S3;
 				WHEN S6 =>
-                    state <= S0;						  
+                    state <= S0;
 			END CASE;
 		END IF;
 	END PROCESS;
@@ -68,102 +67,45 @@ BEGIN
 		CASE state IS
 			WHEN S0 =>
 						pronto <= '1';
-						mPH <= '0';
-						srPh <= '0';
-						cPH <= '0';
-						srPL <= '0';
-						cPL <= '0';
-						cB <= '0';
 						cmult <= '0';
-						mFF <= '0';
-						mcont <= '0';
-						ccont <= '0';
-						srAA <= '0';
-						cAA <= '0';
 			WHEN S1 =>					
 						pronto <= '0';
+						cAA <= '1';
+						cB <= '1';
+						cPH <= '1';
+						cPL <= '1';
 						mPH <= '1';
 						srPh <= '0';
-						cPH <= '1';
 						srPL <= '0';
-						cPL <= '1';
-						cB <= '1';
-						cmult <= '0';
-						mFF <= '0';
+						ccont <= '1';
 						mcont <= '1';
-						ccont <= '1';
 						srAA <= '0';
-						cAA <= '1';
 			WHEN S2 =>
-						pronto <= '0';
-						mPH <= '0';
-						srPh <= '0';
-						cPH <= '0';
-						srPL <= '0';
-						cPL <= '0';
-						cB <= '0';
-						cmult <= '0';
-						mFF <= '0';
-						mcont <= '0';
-						ccont <= '0';
-						srAA <= '0';
 						cAA <= '0';
+						cB <= '0';
+						cPH <= '0';
+						cPL <= '0';
+						ccont <= '0';
 			WHEN S3 =>
-						pronto <= '0';
-						mPH <= '0';
-						srPh <= '0';
-						cPH <= '0';
-						srPL <= '0';
-						cPL <= '0';
-						cB <= '0';
-						cmult <= '0';
-						mFF <= '0';
-						mcont <= '0';
 						ccont <= '0';
-						srAA <= '0';
-						cAA <= '0';
-			WHEN S4 =>
-						pronto <= '0';
-						mPH <= '0';
-						srPh <= '0';
-						cPH <= '1';
-						srPL <= '0';
-						cPL <= '0';
-						cB <= '0';
-						cmult <= '0';
-						mFF <= '0';
-						mcont <= '0';
-						ccont <= '0';
-						srAA <= '0';
-						cAA <= '0';
-			WHEN S5 =>
-						pronto <= '0';
-						mPH <= '0';
-						srPh <= '1';
-						cPH <= '0';
-						srPL <= '1';
-						cPL <= '0';
-						cB <= '0';
-						cmult <= '0';
 						mFF <= '1';
-						mcont <= '0';
-						ccont <= '1';
-						srAA <= '1';
-						cAA <= '0';
-			WHEN S6 =>
-						pronto <= '0';
-						mPH <= '0';
-						srPh <= '0';
-						cPH <= '0';
+						srPH <= '0';
 						srPL <= '0';
-						cPL <= '0';
-						cB <= '0';
-						cmult <= '1';
-						mFF <= '0';
-						mcont <= '0';
-						ccont <= '0';
 						srAA <= '0';
-						cAA <= '0';
+			WHEN S4 =>
+						cPH <= '1';
+						mFF <= '0';
+						mPH <= '0';
+			WHEN S5 =>
+						cPH <= '0';
+						ccont <= '1';
+						srPH <= '1';
+						srPL <= '1';
+						srAA <= '1';
+						mcont <= '0';
+
+			WHEN S6 =>
+						cmult <= '1';
 		END CASE;
 	END PROCESS;
 END estrutura;

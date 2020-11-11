@@ -45,26 +45,24 @@ COMPONENT igualazero IS
 			igual : OUT STD_LOGIC);
 END COMPONENT;
 
-COMPONENT PL IS
+COMPONENT register_with_shift IS
 	generic (n:natural);
-	PORT (clk, cPL, srPL : IN STD_LOGIC;
+	PORT (clk, cRegister, srRegister, srIN : IN STD_LOGIC;
 		  d : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
-		  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0);
-		  srIN : IN STD_LOGIC);
+		  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 END COMPONENT;
 
-COMPONENT PH IS
-	generic (n:natural);
-	PORT (clk, cPH, srPH, srIN : IN STD_LOGIC;
-		  d : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
-		  q : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0);
-		  srOUT : OUT STD_LOGIC);
+COMPONENT flip_flop IS
+PORT (clk: IN STD_LOGIC;
+	  d : IN STD_LOGIC;
+	  q : OUT STD_LOGIC);
 END COMPONENT;
 
-SIGNAL saidaSOMA, saimux1, saidaPH, saidaB, saidaPL, saidaA, saimuxFF, entradamuxFF : STD_LOGIC_VECTOR (n-1 DOWNTO 0);
+SIGNAL saidaSOMA, saimux1, saidaPH, saidaB, saidaPL, saidaA, entradamuxFF : STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 SIGNAL entadaregMult : STD_LOGIC_VECTOR ((2*n)-1 DOWNTO 0);
-SIGNAL saidamuxcont, saidaMENOS, saidacont, menos_um : STD_LOGIC_VECTOR (3 DOWNTO 0); --ta meio errado pq nÃ£o tÃ¡ igual no slide mas funciona
-SIGNAL dPH, carry : STD_LOGIC;
+SIGNAL saidamuxcont, saidaMENOS, saidacont, menos_um : STD_LOGIC_VECTOR (3 DOWNTO 0); --ta meio errado pq não tá igual no slide mas funciona
+SIGNAL saimuxFF, saiFF_vector, carry_vector	: STD_LOGIC_VECTOR (0 downto 0);
+SIGNAL dPH, carry, saiFF : STD_LOGIC;
 
 BEGIN
 	--componentes para somar entB
@@ -72,13 +70,13 @@ BEGIN
 		GENERIC MAP (n => n)
 		PORT MAP (a=>saidaSOMA, b=>(others=>'0'), sel=>mPH, y=>saimux1);
 
-	PH1: PH 
+	PH1: register_with_shift 
 		GENERIC MAP (n => n)
-		PORT MAP (clk=>clk, cPH=>cPH, srPH=>srPH, d=>saimux1, q=>saidaPH, srOUT=>dPH, srIN=>saimuxFF(0));
+		PORT MAP (clk, cPH, srPH, saiFF_vector(0), saimux1, saidaPH);
 	 
-	PL1: PL
+	PL1: register_with_shift
 		GENERIC MAP (n => n)
-		PORT MAP (clk=>clk, cPL=>cPL, srPL=>srPL, d=>(others=>'0'), q=>saidaPL, srIn=>dPH);
+		PORT MAP (clk, cPL, srPL, saidaPH(0), (others=>'0'), saidaPL);
 		
 	regB: registrador
 		GENERIC MAP (n => n)
@@ -94,9 +92,14 @@ BEGIN
 		
 	muxFF: mux2para1
 		GENERIC MAP (n => 1)
-		PORT MAP (a=>'0', b=>carry, sel=>mPH, y=>saimuxFF);
+		PORT MAP (carry_vector, "0", mFF, saimuxFF);
+	carry_vector(0) <= carry;
 	
-	--entradamuxFF <= (0 => carry, others => '0');
+	FF: flip_flop
+		PORT MAP (clk, saimuxFF(0), saiFF);
+	saiFF_vector(0) <= saiFF;
+
+	entradamuxFF <= (0 => carry, others => '0');
 	
 	regMult: registrador
 		GENERIC MAP (n => 2*n)
@@ -124,9 +127,9 @@ BEGIN
 	menos_um <= (0 => '1', others => '0');
 	
 	--componentes da parte da entA
-	regA: PL
+	regA: register_with_shift
 		GENERIC MAP (n => n)
-		PORT MAP (clk=>clk, cPL=>cAA, srPL=>srAA, d=>entA, q=>saidaA, srIN=>'0');
+		PORT MAP (clk, cAA, srAA, '0', entA, saidaA);
 		
 	compA: igualazero
 		GENERIC MAP (n => n)
