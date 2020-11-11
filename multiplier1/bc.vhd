@@ -56,21 +56,46 @@ BEGIN
 		CASE state IS
 			WHEN S0 =>
 				pronto <= '0';
+				
+	  			ini <= '0';
+	  			CA <= '0';
+	  			dec <= '0';
+	  			CP <= '0';
 			WHEN S1 =>
                 ini <= '1';
-                CA  <= '1';
+				CA  <= '1';
+
+   			   	pronto <= '0';
+	  			dec <= '0';
+	  			CP <= '0';
 			WHEN S2 =>
                 ini <= '0';
                 CA  <= '0';
-                dec <= '0';
+				dec <= '0';
+
+   			   	pronto <= '0';
+	  			CP <= '0';
 			WHEN S3 =>
-                CP  <= '1';
+				CP  <= '1';
+
+   			   	pronto <= '0';
+	  			ini <= '0';
+	  			CA <= '0';
+	  			dec <= '0';
 			WHEN S4 =>
                 CP  <= '0';
                 CA  <= '1';
-                dec <= '1';
+				dec <= '1';
+
+   			   	pronto <= '0';
+	  			ini <= '0';
 			WHEN S5 =>
-                pronto <= '1';
+				pronto <= '1';
+
+	  			ini <= '0';
+	  			CA <= '0';
+	  			dec <= '0';
+	  			CP <= '0';
 		END CASE;
 	END PROCESS;
 END estrutura;

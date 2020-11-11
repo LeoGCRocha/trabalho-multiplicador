@@ -11,7 +11,7 @@ END registrador_r;
 
 ARCHITECTURE estrutura OF registrador_r IS
 BEGIN
-	PROCESS(clk, reset)
+	PROCESS(clk, reset, carga)
 	BEGIN
 		IF(reset = '1') THEN
 			q <= (others => '0');
