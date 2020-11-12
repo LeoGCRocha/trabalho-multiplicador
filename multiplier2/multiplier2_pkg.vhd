@@ -1,5 +1,5 @@
 package multiplier2_pkg is
-	constant N_BITS : natural := 8;
+	constant N_BITS : natural := 4;
 	 
 	function Bit_lenght (
 		x : positive)

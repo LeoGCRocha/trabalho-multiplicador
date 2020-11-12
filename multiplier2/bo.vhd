@@ -61,7 +61,7 @@ END COMPONENT;
 
 SIGNAL saidaSOMA, saimux1, saidaPH, saidaB, saidaPL, saidaA : STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 SIGNAL entadaregMult : STD_LOGIC_VECTOR ((2*n)-1 DOWNTO 0);
-SIGNAL saidamuxcont, saidaMENOS, saidacont, menos_um : STD_LOGIC_VECTOR (3 DOWNTO 0); --ta meio errado pq não tá igual no slide mas funciona
+SIGNAL saidamuxcont, saidaMENOS, saidacont, menos_um : STD_LOGIC_VECTOR (Bit_lenght(n)-1 DOWNTO 0); --ta meio errado pq não tá igual no slide mas funciona
 SIGNAL saimuxFF, saiFF_vector, carry_vector	: STD_LOGIC_VECTOR (0 downto 0);
 SIGNAL dPH, carry, saiFF : STD_LOGIC;
 
@@ -109,7 +109,7 @@ BEGIN
 	--componetes para somar n --na (vdd tem um role do tamanho dos fios serem tipo 1+log2, logo esses negeric map dessa parte ta errado)
 	muxcont: mux2para1
 		GENERIC MAP (n => Bit_lenght(n)) 
-		PORT MAP (a=>saidaMENOS, b=>"1000", sel=>mcont, y=>saidamuxcont);
+		PORT MAP (a=>saidaMENOS, b=>(Bit_lenght(n)-1 => '1', others => '0'), sel=>mcont, y=>saidamuxcont);
 		
 	regCont : registrador
 		GENERIC MAP (n => Bit_lenght(n))
