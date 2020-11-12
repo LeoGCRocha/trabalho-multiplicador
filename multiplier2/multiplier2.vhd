@@ -41,7 +41,7 @@ SIGNAL mPH, srPH, cPH, srPL, cPL, cB, cmult, mFF, mcont, ccont, srAA, cAA, Az, B
 
 BEGIN
 
-	four_bit : bo 
+	bloco_operativo : bo 
 		generic map (n => n)
 		port map(clk=>ck, mPH=>mPH, srPH=>srPH, cPH=>cPH, srPL=>srPL, cPL=>cPL, cB=>cB, cmult=>cmult, mFF=>mFF, 
 					mcont=>mcont, ccont=>ccont, srAA=>srAA, cAA=>cAA, entA=>entA, entB=>entB, Az=>Az, Bz=>Bz, 

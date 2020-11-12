@@ -1,6 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
+use work.multiplier2_pkg.all;
 
 ENTITY bo is
 	generic (n:natural);
@@ -107,19 +108,19 @@ BEGIN
 	
 	--componetes para somar n --na (vdd tem um role do tamanho dos fios serem tipo 1+log2, logo esses negeric map dessa parte ta errado)
 	muxcont: mux2para1
-		GENERIC MAP (n => 4) 
+		GENERIC MAP (n => Bit_lenght(n)) 
 		PORT MAP (a=>saidaMENOS, b=>"1000", sel=>mcont, y=>saidamuxcont);
 		
 	regCont : registrador
-		GENERIC MAP (n => 4)
+		GENERIC MAP (n => Bit_lenght(n))
 		PORT MAP (clk=>clk, carga=>ccont, d=>saidamuxcont, q=>saidacont);
 		
 	compcont: igualazero
-		GENERIC MAP (n => 4)
+		GENERIC MAP (n => Bit_lenght(n))
 		PORT MAP (a=>saidacont, igual=>contz);
 		
 	Subtracao: somadorsubtrator
-		GENERIC MAP (n => 4)
+		GENERIC MAP (n => Bit_lenght(n))
 		PORT MAP (a=>saidacont, b=>menos_um, op=>'1', s=>saidaMENOS);
 	
 	menos_um <= (0 => '1', others => '0');

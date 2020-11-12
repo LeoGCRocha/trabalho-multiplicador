@@ -60,8 +60,8 @@ begin
         variable val_SPACE : character;
 
         begin
-            file_open(input_buf, "/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier2/inputs.txt", read_mode);
-            file_open(output_buf, "/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier2/outputs_testbench.txt", write_mode);
+            file_open(input_buf, "D:\Git_Desktop_Files\trabalho-multiplicador\multiplier2\inputs.txt", read_mode);
+            file_open(output_buf, "D:\Git_Desktop_Files\trabalho-multiplicador\multiplier2\outputs_testbench.txt", write_mode);
 				
 				
             wait until reset = '0';				
