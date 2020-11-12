@@ -19,7 +19,7 @@ for a,b in itertools.product(testes_a, testes_b):
     
     bin_a = int2unsigned(a, N_BITS)
     bin_b = int2unsigned(b, N_BITS)
-    bin_res = int2unsigned(res, N_BITS)
+    bin_res = int2unsigned(res, 2*N_BITS)
     
     print(f'{bin_a} {bin_b}', file = input_f)
     print(bin_res, file = output_f)

@@ -11,7 +11,7 @@ end multiplier1_1_tb;
 
 architecture tb of multiplier1_1_tb is
     signal inicio, reset, clk, pronto : std_logic;
-    signal a, b : std_logic_vector((2*n)-1 downto 0);
+    signal a, b : std_logic_vector(n-1 downto 0);
 	 signal saida : std_logic_vector((2*n)-1 downto 0);
 	 
     component multiplier is

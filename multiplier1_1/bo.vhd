@@ -77,6 +77,7 @@ BEGIN
 		 GENERIC MAP (n => 2*n)
 		 PORT MAP (sairegP, entradamux2, dec, saimux2);  
 		 
+	 entradamux2((2*n)-1 downto n) <= (others => '0');
 	 entradamux2(n-1 downto 0) <= sairegA;
 	
     mux3: mux2para1 
@@ -87,6 +88,7 @@ BEGIN
 		 GENERIC MAP (n => 2*n)
 		 PORT MAP (saimux2, entradasomab, dec, saisomasub);
 	 
+	 entradasomab((2*n)-1 downto n) <= (others => '0');
 	 entradasomab(n-1 downto 0) <= saimux3;
 	 
     geraAz: igualazero 
