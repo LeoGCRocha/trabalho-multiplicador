@@ -1,0 +1,155 @@
+# do multiplier1_1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/somadorsubtrator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity somadorsubtrator
+# -- Compiling architecture estrutura of somadorsubtrator
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/igualazero.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity igualazero
+# -- Compiling architecture estrutura of igualazero
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package multiplier1_1_pkg
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture estrutura of bo
+# ** Warning: /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bo.vhd(85): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador_r.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity registrador_r
+# -- Compiling architecture estrutura of registrador_r
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/mux2para1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# vcom -93 -work work {/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier1_1_pkg
+# -- Compiling entity multiplier1_1
+# -- Compiling architecture estrutura of multiplier1_1
+# 
+vcom -reportprogress 300 -work work /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package multiplier1_1_pkg
+# -- Loading package std_logic_textio
+# -- Compiling entity multiplier1_1_tb
+# -- Compiling architecture tb of multiplier1_1_tb
+# -- Loading entity multiplier1_1
+vsim work.multiplier1_1_tb
+# vsim work.multiplier1_1_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.multiplier1_1_pkg
+# Loading ieee.std_logic_textio(body)
+# Loading work.multiplier1_1_tb(tb)
+# Loading work.multiplier1_1(estrutura)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.bo(estrutura)
+# Loading work.mux2para1(comportamento)
+# Loading work.registrador_r(estrutura)
+# Loading work.registrador(estrutura)
+# Loading work.somadorsubtrator(estrutura)
+# Loading work.igualazero(estrutura)
+# Loading work.bc(estrutura)
+add wave -position insertpoint  \
+sim:/multiplier1_1_tb/a \
+sim:/multiplier1_1_tb/b \
+sim:/multiplier1_1_tb/clk \
+sim:/multiplier1_1_tb/clkp \
+sim:/multiplier1_1_tb/inicio \
+sim:/multiplier1_1_tb/n \
+sim:/multiplier1_1_tb/pronto \
+sim:/multiplier1_1_tb/reset \
+sim:/multiplier1_1_tb/saida
+add wave -position insertpoint  \
+sim:/multiplier1_1_tb/UUT/bloco_controle/state
+add wave -position insertpoint  \
+sim:/multiplier1_1_tb/UUT/bloco_operacao/sairegA \
+sim:/multiplier1_1_tb/UUT/bloco_operacao/sairegB \
+sim:/multiplier1_1_tb/UUT/bloco_operacao/sairegP \
+sim:/multiplier1_1_tb/UUT/bloco_operacao/saisomasub
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier1_1_tb/UUT/bloco_operacao/geraBz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier1_1_tb/UUT/bloco_operacao/geraAz
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 3  Instance: /multiplier1_1_tb/UUT/bloco_operacao/somasub
+# Break key hit 
+# Simulation stop requested.

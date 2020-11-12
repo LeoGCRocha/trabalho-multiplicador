@@ -1,0 +1,368 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/simulation/modelsim
+Ebc
+Z1 w1605155441
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/simulation/modelsim
+Z5 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bc.vhd
+Z6 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bc.vhd
+l0
+L4
+VR@@E5gSJVn[i0>H[=JWll0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1605157235.253676
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bc.vhd|
+Z10 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bc.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 fQGT>oOkb94QN1KSW<e:O0
+!i10b 1
+Aestrutura
+R2
+R3
+DEx4 work 2 bc 0 22 R@@E5gSJVn[i0>H[=JWll0
+l21
+L18
+VJUbo`ZK3=1fhI3IA=YW5P3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 z4?d5_E?NM@GCOezZKlIH1
+!i10b 1
+Ebo
+R1
+Z13 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z15 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bo.vhd
+Z16 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bo.vhd
+l0
+L5
+V9KSz:CzQ7dBid5J^D6<aP3
+R7
+31
+Z17 !s108 1605157235.212336
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bo.vhd|
+Z19 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/bo.vhd|
+R11
+R12
+!s100 d7DUGR0eZh8e_fjIZ]aTF1
+!i10b 1
+Aestrutura
+R13
+R14
+R2
+R3
+DEx4 work 2 bo 0 22 9KSz:CzQ7dBid5J^D6<aP3
+l59
+L20
+VnS30;V_KiQ7oNEX]VV4Pk1
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 JX]VdZQV;5W37CX]IkFcY0
+!i10b 1
+Eigualazero
+R1
+R13
+R14
+R2
+R3
+R4
+Z20 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/igualazero.vhd
+Z21 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/igualazero.vhd
+l0
+L5
+VH3k:U=fM8b^c[72l3ATjD2
+R7
+31
+Z22 !s108 1605157235.159044
+Z23 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/igualazero.vhd|
+Z24 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/igualazero.vhd|
+R11
+R12
+!s100 W[US3PRNoOoP95cU8T:WJ3
+!i10b 1
+Aestrutura
+R13
+R14
+R2
+R3
+DEx4 work 10 igualazero 0 22 H3k:U=fM8b^c[72l3ATjD2
+l12
+L11
+V7>h<SlB[RZ@io<Bz`hRc_1
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 J7z4cHh`jg9iKzBd?Pj5L1
+!i10b 1
+Emultiplier1_1
+R1
+Z25 DPx4 work 17 multiplier1_1_pkg 0 22 5ZFZ<GoS@4^@_jEY8D;M]0
+Z26 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z27 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1.vhd
+Z28 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1.vhd
+l0
+L6
+VQhLNVS3b9BScIEgSj4Gf@3
+R7
+31
+Z29 !s108 1605157235.291857
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1.vhd|
+Z31 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1.vhd|
+R11
+R12
+!s100 1N4Zih[caN;B^XBC>6Sjk2
+!i10b 1
+Aestrutura
+R25
+R26
+R2
+R3
+Z32 DEx4 work 13 multiplier1_1 0 22 QhLNVS3b9BScIEgSj4Gf@3
+l33
+L14
+V[kVf?]4f9HBH5@THWFSnh1
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 QJ[J;P?G7KZS9`Pk2zfnL0
+!i10b 1
+Pmultiplier1_1_pkg
+w1605157005
+R4
+8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_pkg.vhd
+F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_pkg.vhd
+l0
+L1
+V5ZFZ<GoS@4^@_jEY8D;M]0
+R7
+31
+R11
+R12
+!s100 A>i<]:Wl?fV>kHDOW`b[?2
+!i10b 1
+!s108 1605157235.198213
+!s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_pkg.vhd|
+!s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_pkg.vhd|
+Emultiplier1_1_tb
+Z33 w1605155657
+Z34 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R25
+R26
+R2
+R3
+R4
+Z35 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_tb.vhd
+Z36 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_tb.vhd
+l0
+L8
+VX9eH=KHG2hBC@VA9G_eGh3
+!s100 =_0?4;Ilm_1zPL;L]65:33
+R7
+32
+!i10b 1
+Z37 !s108 1605157240.027767
+Z38 !s90 -reportprogress|300|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_tb.vhd|
+Z39 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/multiplier1_1_tb.vhd|
+Z40 o-work work -O0
+R12
+Atb
+R32
+R34
+R25
+R26
+R2
+R3
+DEx4 work 16 multiplier1_1_tb 0 22 X9eH=KHG2hBC@VA9G_eGh3
+l26
+L12
+V`ECP?]b[e`<PSkhDM1aJA2
+!s100 zIDKM0Z5L6O<A74Xc]?U=3
+R7
+32
+!i10b 1
+R37
+R38
+R39
+R40
+R12
+Emux2para1
+R1
+R2
+R3
+R4
+Z41 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/mux2para1.vhd
+Z42 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/mux2para1.vhd
+l0
+L4
+VJ34bEJYb09bhFXQ:]nN^13
+R7
+31
+Z43 !s108 1605157235.275518
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/mux2para1.vhd|
+Z45 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/mux2para1.vhd|
+R11
+R12
+!s100 ZjB<L=mK96TU5bRQ83EO?3
+!i10b 1
+Acomportamento
+R2
+R3
+DEx4 work 9 mux2para1 0 22 J34bEJYb09bhFXQ:]nN^13
+l12
+L11
+VhhOVOlgEYHo;GLlaBzZ[h2
+R7
+31
+R43
+R44
+R45
+R11
+R12
+!s100 GloL6K7`7YX[@cVoNMLWz3
+!i10b 1
+Eregistrador
+R1
+R13
+R14
+R2
+R3
+R4
+Z46 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador.vhd
+Z47 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador.vhd
+l0
+L5
+V[>SIiN2nh0YUW72K[7I4Y2
+R7
+31
+Z48 !s108 1605157235.178494
+Z49 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador.vhd|
+Z50 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador.vhd|
+R11
+R12
+!s100 TCjKbU]@3gjOAl`;BNK=P0
+!i10b 1
+Aestrutura
+R13
+R14
+R2
+R3
+DEx4 work 11 registrador 0 22 [>SIiN2nh0YUW72K[7I4Y2
+l13
+L12
+VFg3`9[iYF<ZcOz;2CZ1gR1
+R7
+31
+R48
+R49
+R50
+R11
+R12
+!s100 lWWNmUPS5:POPP;oR7ZMd0
+!i10b 1
+Eregistrador_r
+R1
+R13
+R14
+R2
+R3
+R4
+Z51 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador_r.vhd
+Z52 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador_r.vhd
+l0
+L5
+VL<JGPffS]Mhd9hiEIV1J12
+R7
+31
+Z53 !s108 1605157235.233353
+Z54 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador_r.vhd|
+Z55 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/registrador_r.vhd|
+R11
+R12
+!s100 D;FJGzAJXlS^eYlD1ePzN2
+!i10b 1
+Aestrutura
+R13
+R14
+R2
+R3
+DEx4 work 13 registrador_r 0 22 L<JGPffS]Mhd9hiEIV1J12
+l13
+L12
+VzL@0gczK2U9Xg^DSk`XGz3
+R7
+31
+R53
+R54
+R55
+R11
+R12
+!s100 EmWY9`Be6GBeZ7?lBhNe43
+!i10b 1
+Esomadorsubtrator
+R1
+R13
+R14
+R2
+R3
+R4
+Z56 8/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/somadorsubtrator.vhd
+Z57 F/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/somadorsubtrator.vhd
+l0
+L5
+V]lQ:anz=?=B6g8Bag7^^93
+R7
+31
+Z58 !s108 1605157235.139711
+Z59 !s90 -reportprogress|300|-93|-work|work|/home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/somadorsubtrator.vhd|
+Z60 !s107 /home/kuru/UFSC/SD/QuartusProjects/TP/multiplier1_1/somadorsubtrator.vhd|
+R11
+R12
+!s100 B6H;`9dYM[<?2eeUdjiO;0
+!i10b 1
+Aestrutura
+R13
+R14
+R2
+R3
+DEx4 work 16 somadorsubtrator 0 22 ]lQ:anz=?=B6g8Bag7^^93
+l13
+L12
+V833R`WUi_l1dlb_aCC89P1
+R7
+31
+R58
+R59
+R60
+R11
+R12
+!s100 LD@436F`::486Hza2><bo1
+!i10b 1
